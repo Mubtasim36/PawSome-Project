@@ -1,11 +1,19 @@
+html,
+body {
+  /* Ensures full height for body and html */
+  margin: 0;
+  padding: 0;
+  background-color: #fefffe;
+}
 .header {
   display: flex;
   justify-content: space-between;
   align-items: center;
   padding: 10px 20px;
-  background-color: #f8f9fa;
+  background-color: #f8fff6;
   margin: 0px;
   padding: 0px;
+  border-bottom: 1px solid #dddddd;
 }
 .SiteName {
   display: flex;
@@ -20,11 +28,17 @@
 .About,
 .Login,
 .Signup {
+  font-family: Roboto;
   font-size: 16px;
   padding: 10px;
-  font-family: Roboto;
   text-decoration: none;
   color: black;
+}
+
+.nav_bar {
+  display: flex;
+  margin-right: 80px;
+  align-items: center;
 }
 
 .Signup {
@@ -46,4 +60,77 @@
 .Signup:hover {
   background-color: #1e6bb8;
   color: rgb(203, 214, 233);
+}
+
+.tagline {
+  font-family: "Poppins";
+  font-size: 52px;
+  color: #373c41;
+}
+
+.highlight-find {
+  color: #04a743;
+}
+
+.highlight-care {
+  color: #04a743;
+}
+
+.highlight-pets {
+  color: #04a743;
+}
+
+.Herosection {
+  display: flex;
+  padding: 50px 80px; /* first value is top-bottom, second is left-right */
+  gap: 40px;
+}
+
+.Heroimg img {
+  width: 700px;
+  height: auto;
+  border-radius: 15px;
+}
+
+.Description {
+  font-family: "Poppins";
+  font-size: 18px;
+  color: #606060;
+  margin-top: 20px;
+  padding-bottom: 2%;
+}
+
+.Browse,
+.Get_Started {
+  font-family: "Roboto";
+  font-size: 18px;
+  align-items: flex-end;
+  text-decoration: none;
+  border-radius: 6px;
+  padding: 14px;
+  margin: 10px;
+  margin-left: 0%; /* to align with other texts */
+  margin-bottom: 20px;
+  border-radius: 15px;
+}
+.Browse {
+  background-color: #2682c8;
+  color: white;
+}
+.Get_Started {
+  color: rgb(0, 0, 0);
+  border: 2px solid #c2c2c2;
+}
+.Trust {
+  /* for list texts */
+  font-family: "Poppins";
+  font-size: 16px;
+  color: #00a455;
+  margin: 120px;
+  gap: 30px;
+  display: flex;
+}
+
+.Spoint {
+  color: #2682c8;
 }
