@@ -57,12 +57,14 @@ body {
 .Login:hover {
   color: #50575d;
 }
+
 .Signup:hover {
   background-color: #1e6bb8;
   color: rgb(203, 214, 233);
 }
 
 .tagline {
+  margin-top: 0px;
   font-family: "Poppins";
   font-size: 52px;
   color: #373c41;
@@ -82,8 +84,12 @@ body {
 
 .Herosection {
   display: flex;
-  padding: 50px 80px; /* first value is top-bottom, second is left-right */
+  padding-top: 60px;
+  padding-left: 80px;
+  padding-right: 80px;
   gap: 40px;
+  border-bottom: 1px solid #dddddd;
+  margin-bottom: 40px;
 }
 
 .Heroimg img {
@@ -97,7 +103,7 @@ body {
   font-size: 18px;
   color: #606060;
   margin-top: 20px;
-  padding-bottom: 2%;
+  padding-bottom: 5%;
 }
 
 .Browse,
@@ -106,31 +112,94 @@ body {
   font-size: 18px;
   align-items: flex-end;
   text-decoration: none;
-  border-radius: 6px;
+  border-radius: 10px;
   padding: 14px;
-  margin: 10px;
+  padding-left: 26px;
+  padding-right: 26px;
+  margin: 20px;
   margin-left: 0%; /* to align with other texts */
   margin-bottom: 20px;
-  border-radius: 15px;
 }
 .Browse {
   background-color: #2682c8;
   color: white;
 }
-.Get_Started {
-  color: rgb(0, 0, 0);
-  border: 2px solid #c2c2c2;
+.Browse:hover {
+  background-color: #1e6bb8;
 }
+
+.Get_Started {
+  color: #2682c8;
+  border: 2px solid #2682c8;
+}
+.Get_Started:hover {
+  background-color: #e6f0fa;
+}
+
 .Trust {
   /* for list texts */
   font-family: "Poppins";
   font-size: 16px;
   color: #00a455;
-  margin: 120px;
+  margin: 112px;
   gap: 30px;
   display: flex;
 }
 
 .Spoint {
   color: #2682c8;
+}
+
+.Features {
+  display: flex; /* to align all text side by side */
+  padding: 40px 80px; /* first value is top-bottom, second is left-right */
+  gap: 40px;
+  margin: 0%;
+  border-bottom: 1px solid #dddddd;
+}
+
+.tagline2 {
+  font-family: "Roboto";
+  font-size: 32px;
+  margin-top: 0px;
+  margin: 0px;
+  color: #373c41;
+}
+
+.description2 {
+  font-family: "Poppins";
+  font-size: 16px;
+  color: #606060;
+  width: 500px;
+}
+
+.Adopters {
+  margin-left: 100px;
+  padding-left: 20px;
+  padding-right: 20px;
+  border: 2px solid rgb(221, 221, 221);
+  border-radius: 20px;
+}
+.Shelters {
+  margin-left: 100px;
+  padding-left: 20px;
+  padding-right: 20px;
+  border: 2px solid rgb(221, 221, 221);
+  border-radius: 20px;
+}
+.H_adopter,
+.H_Shelter {
+  font-family: "Poppins";
+  font-size: 18px;
+  margin-top: 30px;
+  color: #373c41;
+}
+
+.P_adopter,
+.P_shelter {
+  font-family: "Poppins";
+  font-size: 15px;
+  color: #606060;
+  width: 350px;
+  margin-top: 10px;
 }
