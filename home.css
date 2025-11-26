@@ -1,0 +1,49 @@
+.header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 10px 20px;
+  background-color: #f8f9fa;
+  margin: 0px;
+  padding: 0px;
+}
+.SiteName {
+  display: flex;
+  align-items: center;
+  font-family: "Poppins";
+  font-size: 48px;
+  color: #2682c8;
+  margin: 0px;
+  padding: 0px;
+}
+.Home,
+.About,
+.Login,
+.Signup {
+  font-size: 16px;
+  padding: 10px;
+  font-family: Roboto;
+  text-decoration: none;
+  color: black;
+}
+
+.Signup {
+  background-color: #2682c8;
+  color: white;
+  border-radius: 6px;
+  padding-left: 14px;
+  padding-right: 14px;
+  margin: 10px;
+}
+.Home {
+  font-weight: bold;
+}
+.Home:hover,
+.About:hover,
+.Login:hover {
+  color: #50575d;
+}
+.Signup:hover {
+  background-color: #1e6bb8;
+  color: rgb(203, 214, 233);
+}
