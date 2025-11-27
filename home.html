@@ -7,131 +7,134 @@
     <meta name="author" content="Al Mubtasim" />
     <meta name="viewport" content="width=device-width,initial-scale=1.0" />
     <link rel="stylesheet" href="home.css" />
-<link rel="icon" type="image/x-icon" href="Images/Logo.png">
+    <link rel="icon" type="image/x-icon" href="Images/Logo.png" />
   </head>
-</html>
 
-<body class="Body">
+  <body class="Body">
     <!-- Top Header with Navigation Bar and Registration Links -->
-    <div class="header">
+    <header>
+      <div class="header">
+        <h1 class="SiteName">
+          <img
+            src="Images/Logo.png"
+            alt="Website Logo"
+            width="100"
+            height="100"
+          />
+          PawSome
+        </h1>
 
-  <h1 class="SiteName">
-    <img src="Images/Logo.png" alt="Website Logo" width="100" height="100">
-    PawSome
-</h1>
+        <div class="nav_bar">
+          <a class="Home" href="home.html">Home</a>
+          <a class="About" href="#features">About</a>
+          <!to scroll to features section-->
+          <a class="Login" href="login.html">Login</a>
+          <a class="Signup" href="signup.html">Signup</a>
+        </div>
+      </div>
+    </header>
+    <div class="Herosection">
+      <div>
+        <h1 class="tagline">
+          A Gentle Way to
+          <span class="highlight-find">Find</span> and
+          <span class="highlight-care">Care</span> for
+          <span class="highlight-pets">Pets</span>.
+        </h1>
 
-  <div class="nav_bar">
-    <a class="Home" href="home.html">Home</a>
-    <a class="About" href="about.html">About</a>   
-    <a class="Login" href="login.html">Login</a>
-    <a class="Signup" href="signup.html">Signup</a>
-  </div>
+        <p class="Description">
+          PawSome connects Adopters and Shelters to make pet adoption simple,
+          transparent, and kind. Browse pets, track health records, and manage
+          adoptions in a calm, friendly interface.
+        </p>
+        <a class="Browse" href="browsepets.html">Browse Pets</a>
+        <a class="Get_Started" href="Signup.html">Get Started</a>
+        <div class="TrustSection">
+          <p class="Trust">•Trusted by Adopters and Shelters</p>
+          <p class="Trust2">•Simple and Friendly</p>
+        </div>
+      </div>
+
+      <div class="Heroimg">
+        <img src="Images/Herosection.JPG" alt="Hero Image" />
+      </div>
     </div>
 
-  <div class="Herosection">
+    <div class="Features" id="features">
+      <div class="Features_Text">
+        <h3 class="tagline2">A calm space for pet adoption</h3>
+        <p class="description2">
+          PawSome streamlines adoption journeys while staying gentle and human.
+          Every role gets a tailored dashboard with just the tools they need.
+        </p>
+      </div>
 
-    <div>
-      <h1 class="tagline">
-      A Gentle Way to 
-      <span class="highlight-find">Find</span> and 
-      <span class="highlight-care">Care</span> for 
-      <span class="highlight-pets">Pets</span>.
-      </h1>    
+      <div class="Adopters">
+        <h4 class="H_adopter">For Adopters</h4>
+        <p class="P_adopter">
+          Browse friendly profiles, send adoption requests, and track status in
+          one tidy view.
+        </p>
+      </div>
 
-    <p class="Description">PawSome connects Adopters and Shelters to make pet adoption simple, transparent, and kind. Browse pets, track health records, and manage adoptions in a calm, friendly interface. </p>
-    <a class="Browse" href="home.html">Browse Pets</a>
-    <a class="Get_Started" href="Signup.html">Get Started</a>
-    <ul class="Trust">
-      <li class="Fpoint">Trusted by Adopters and Shelters</li>
-      <li class="Spoint">Simple and Friendly</li>
-    </ul>
-
-</div>
-
-    <div class="Heroimg">
-      <img src="Images/Herosection.JPG" alt="Hero Image" />
-    </div>
-  </div>
-
-
-
-  
-  <div class="Features">
-
-    <div class="Features_Text">
-    <h3 class="tagline2">A calm space for pet adoption</h3>
-    <p class="description2">PawSome streamlines adoption journeys while staying gentle and human. Every role gets a tailored dashboard with just the tools they need. </p>
-    </div> 
-
-    <div class="Adopters">
-    <h4 class="H_adopter">For Adopters</h4>
-    <p class="P_adopter">Browse friendly profiles, send adoption requests, and track status in one tidy view. </p>
-   </div>
-
-    <div class="Shelters">
-    <h4 class="H_Shelter">For Shelters</h4>
-    <p class="P_shelter">We provide tools to manage pet care, track adoptions, and maintain shelter operations efficiently.</p>
-   </div>
-
-</div>
-
-
-<div class="Browse_Section">
-    <h3 class="tagline3">Browse Pets</h3>
-    <p class="description3">Filter by type, age, and location to find your perfect match.</p>
-
-    <div class="DogCard">
-        <img src="Images/Dog1.JPG" alt="Dog 1" />
-        <h4>Puppy</h4>
-        <p>2 years old • Golden Retriever • New York, NY</p>
-        <a href="petdetails.html">View Details</a>
-        <p class="Available">Available</p>
-        <p class="Location">Uttara, Dhaka</p>
+      <div class="Shelters">
+        <h4 class="H_Shelter">For Shelters</h4>
+        <p class="P_shelter">
+          We provide tools to manage pet care, track adoptions, and maintain
+          shelter operations efficiently.
+        </p>
+      </div>
     </div>
 
-    <div class="CatCard">
-        <img src="Images/Cat1.JPG" alt="Dog 1" />
-        <h4>Minnie</h4>
-        <p>3 years old • Ragdoll • New York, NY</p>
-        <a href="petdetails.html">View Details</a>
-        <p class="Pending">Pending</p>
-        <p class="Location">Uttara, Dhaka</p>
+    <div class="Browse_Section">
+      <h3 class="tagline3">Browse Pets</h3>
+      <p class="description3">
+        Filter by type, age, and location to find your perfect match.
+      </p>
+      <div class="Seemore">
+        <a class="BrowseMore" href="browsepets.html">See More Pets ></a>
+      </div>
+      <div class="Browse_Cards">
+        <div class="DogCard">
+          <img class="petImg" src="Images/Dog1.JPG" alt="Dog 1" />
+          <div class="cardheader">
+            <h4 class="Name">Puppy</h4>
+            <ul class="Status">
+              <li>Available</li>
+            </ul>
+          </div>
+          <p class="info">2 years old • Golden Retriever • Uttara, Dhaka</p>
+          <a class="detailsBtn" href="petdetails.html">View Details</a>
+        </div>
+
+        <div class="CatCard">
+          <img class="petImg" src="Images/Cat1.JPG" alt="Dog 1" />
+          <div class="cardheader">
+            <h4 class="Name">Minnie</h4>
+            <ul class="Status">
+              <li>Pending</li>
+            </ul>
+          </div>
+          <p class="info">3 years old • Ragdoll • Uttara, Dhaka</p>
+          <a class="detailsBtn" href="petdetails.html">View Details</a>
+        </div>
+
+        <div class="RabbitCard">
+          <img class="petImg" src="Images/Rabbit1.JPG" alt="Rabbit 1" />
+          <div class="cardheader">
+            <h4 class="Name">Bunny</h4>
+            <ul class="Status">
+              <li>Pending</li>
+            </ul>
+          </div>
+          <p class="info">2 years old • White Rabbit • Uttara, Dhaka</p>
+          <a class="detailsBtn" href="petdetails.html">View Details</a>
+        </div>
+      </div>
     </div>
 
-    <div class="RabbitCard">
-        <img src="Images/Rabbit1.JPG" alt="Rabbit 1" />
-        <h4>Bunny</h4>
-        <p>2 years old • White Rabbit • New York, NY</p>
-        <a href="petdetails.html">View Details</a>
-        <p class="Pending">Pending</p>
-        <p class="Location">Uttara, Dhaka</p>
-    </div>
-
-    <select class="Types">
-        <option>Type: Any</option>
-        <option>Cats</option>
-        <option>Dogs</option>
-        <option>Rabbits</option>
-    </select>
-
-     <select class="Ages">
-        <option>Age: Any</option>
-        <option>0-6 Months</option>
-        <option>6-12 Months</option>
-        <option>1-3 Years</option>
-        <option>3+ Years</option>
-    </select>
-
-     <select class="Locations">
-        <option>Location: Any</option>
-        <option>Nearby</option>
-        <option>Dhaka</option>
-        <option>Outside Dhaka</option>
-        <option>3+ Years</option>
-    </select>
-
-</div>
-
-
-</body>
+    <footer class="Footer">
+      <p class="footer-text">&copy; 2024 PawSome. All rights reserved.</p>   <!  &copy; is for copyright symbol-->
+    </footer>
+  </body>
 </html>
