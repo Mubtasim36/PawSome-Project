@@ -10,20 +10,19 @@
     <link rel="icon" type="image/x-icon" href="Images/Logo.png" />
     <link href="https://fonts.googleapis.com/icon?family=Material+Icons+Outlined" rel="stylesheet">
   </head>
-  <body>
     <body class="Body">
       <!-- Top Header with Navigation Bar and Registration Links -->
       <header>
         <div class="header">
-          <h1 class="SiteName">
-            <img
-              src="Images/Logo.png"
-              alt="Website Logo"
-              width="100"
-              height="100"
-            />
-            PawSome
-          </h1>
+         <a href="home.html" class="SiteName">
+          <img
+            src="Images/Logo.png"
+            alt="Website Logo"
+            width="100"
+            height="100"
+          />
+          PawSome
+        </a>
           
           <div class="nav_bar">
             <a class="Home" href="home.html">Home</a>
@@ -41,26 +40,31 @@
 
         <div class="loginText">
       
-      <h1 class="signHeader2">Welcome Back</h1>
+      <h1 class="signHeader2">Welcome Back!</h1>
       <p class="signSubHeader2">
         Login to continue your journey with PawSome.
       </p>
 
       <div class="signContainer">
-        <form id="LoginForm" class="LoginForm">
+        <form id="LoginForm" class="loginform">
 
-        <div class="mailInput">
-          <p>E-mail</p>
-            <span class="material-icons-outlined">mail</span>
-          <input type="text" id="email" placeholder="E-mail">
+        <div >
+          <p class="mail_text">E-mail</p>
+          <div class="inputField">
+            <span class="material-icons-outlined">mail</span>             <!to provide a means of applying styles or manipulating specific sections of text within a document   !>
+          <input  class="mailInput" type="text" id="email" placeholder="E-mail">
           </div>
-
-          <div class="passwordInput">
-          <p>Password</p>
-            <span class="material-icons-outlined">lock</span>
-          <input type="password" id="password" placeholder="Password" />
+        </div>
+          <div>
+          <p class="pass_text">Password</p>
+          <div class="inputField">
+            <span class="material-icons-outlined" id="lock">lock</span>
+          <input class="passwordInput" type="password" id="password" placeholder="Password" />
+          <span class="material-icons-outlined visibilityToggle" id="togglePassword">
+      visibility_off
+    </span>
           </div>
-
+          </div>
           <button type="button" id="LoginBtn" class="LoginBTN">Login</button>
           <p class="forgotPass">Forgot your password? <a href="forgot_password.html">Reset Password</a></p>
           <p class="Role">Login As</p>
@@ -73,12 +77,12 @@
                     <input type="radio" id="Admin" name="role" value="Admin">
                     <label for="Admin">Admin</label>
             </div>
-           
+           <div class="signupPrompt">
           <p class="signUpText">
             Don't have an account?
             <a class="signUpLink" href="signup.html">Sign Up</a>
           </p>
-          </p>
+          </div>
         </form>
       </div>
         </div>
@@ -86,6 +90,8 @@
     <footer class="Footer">
       <p class="footer-text">&copy; 2024 PawSome. All rights reserved.</p>   <!  &copy; is for copyright symbol-->
     </footer>
+        <script src="login.js" ></script>
+
     </body>
   </body>
 </html>
