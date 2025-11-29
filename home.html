@@ -7,6 +7,7 @@
     <meta name="author" content="Al Mubtasim" />
     <meta name="viewport" content="width=device-width,initial-scale=1.0" />
     <link rel="stylesheet" href="home.css" />
+    <script src="home.js"></script>
     <link rel="icon" type="image/x-icon" href="Images/Logo.png" />
   </head>
 
@@ -14,7 +15,7 @@
     <!-- Top Header with Navigation Bar and Registration Links -->
     <header>
       <div class="header">
-        <h1 class="SiteName">
+        <a href="home.html" class="SiteName">
           <img
             src="Images/Logo.png"
             alt="Website Logo"
@@ -22,7 +23,7 @@
             height="100"
           />
           PawSome
-        </h1>
+        </a>
 
         <div class="nav_bar">
           <a class="Home" href="home.html">Home</a>
@@ -94,6 +95,16 @@
       <div class="Seemore">
         <a class="BrowseMore" href="browsepets.html">See More Pets ></a>
       </div>
+
+      <div class="filter">
+        <label for="statusFilter">Filter by Status:</label>
+        <select id="statusFilter">
+          <option value="all">All</option>
+          <option value="available">Available</option>
+          <option value="pending">Pending</option>
+        </select>
+      </div>
+
       <div class="Browse_Cards">
         <div class="DogCard">
           <img class="petImg" src="Images/Dog1.JPG" alt="Dog 1" />
@@ -134,7 +145,8 @@
     </div>
 
     <footer class="Footer">
-      <p class="footer-text">&copy; 2024 PawSome. All rights reserved.</p>   <!  &copy; is for copyright symbol-->
+      <p class="footer-text">&copy; 2025 PawSome. All rights reserved.</p>
+      <!  &copy; is for copyright symbol-->
     </footer>
   </body>
 </html>

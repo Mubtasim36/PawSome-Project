@@ -24,6 +24,8 @@ body {
   color: #2682c8;
   margin: 0px;
   padding: 0px;
+  font-weight: bold;
+  text-decoration: none;
 }
 .Home,
 .About,
