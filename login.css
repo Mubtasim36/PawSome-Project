@@ -55,9 +55,7 @@ body {
   width: 60%;
   height: 100%;
 }
-.signContainer {
-  height: auto;
-}
+
 .signHeader2 {
   font-size: 36px;
   color: #04a743;
@@ -160,7 +158,7 @@ body {
   color: rgb(203, 214, 233);
 }
 .forgotPass {
-  text-align: right;
+  text-align: center;
 }
 .forgotLink {
   text-decoration: none;

@@ -47,9 +47,31 @@ function validateLogin() {
   return true; /* Validation passed */
 }
 
-document.getElementById("LoginBtn").addEventListener("click", () => {
-  if (validateLogin()) {
-    /* Submit the form if validation passes */
-    document.getElementById("LoginForm").submit();
+document.getElementById("LoginBtn").addEventListener("click", (e) => {
+  e.preventDefault(); // stop form submission
+
+  if (!validateLogin()) return;
+
+  // get selected role
+  const selectedRole = document.querySelector(
+    'input[name="role"]:checked'
+  ).value;
+
+  // role-based redirect
+  switch (selectedRole) {
+    case "Adopter":
+      window.location.href = "AdopterDashboard.html";
+      break;
+
+    case "Shelter":
+      window.location.href = "ShelterDashboard.html";
+      break;
+
+    case "Admin":
+      window.location.href = "AdminDashboard.html";
+      break;
+
+    default:
+      alert("Please select a role");
   }
 });
