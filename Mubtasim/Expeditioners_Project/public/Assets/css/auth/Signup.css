@@ -1,0 +1,252 @@
+html,
+body {
+  /* Ensures full height for body and html */
+  margin: 0;
+  padding: 0;
+  font-family: "Poppins";
+  background-color: #fefffe;
+  scroll-behavior: smooth; /* for smooth scrolling on clicking about button */
+  min-height: 100vh; /* Ensure body takes full viewport height */
+}
+
+.header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 10px 20px;
+  background-color: #f8fff6;
+  margin: 0px;
+  padding: 0px;
+  border-bottom: 1px solid #dddddd;
+}
+
+.SiteName {
+  display: flex;
+  align-items: center;
+  font-family: "Poppins";
+  font-size: 48px;
+  color: #2682c8;
+  margin: 0px;
+  padding: 0px;
+  font-weight: bold;
+  text-decoration: none;
+}
+
+.Home,
+.About,
+.Login,
+.Signup {
+  font-family: Poppins;
+  font-size: 16px;
+  padding: 10px;
+  text-decoration: none;
+  color: rgb(52, 49, 49);
+}
+
+.nav_bar {
+  display: flex;
+  margin-right: 80px;
+  align-items: center;
+}
+
+.SignupSection {
+  display: flex;
+  justify-content: space-evenly;
+  padding: 30px 50px;
+}
+
+.signupImg {
+  border-radius: 30px;
+  width: 600px;
+  height: 750px;
+  align-items: center;
+}
+
+.signContainer {
+  height: auto;
+}
+
+.signHeader {
+  font-size: 36px;
+  color: #04a743;
+  margin-bottom: 10px;
+}
+
+.signSubHeader {
+  font-size: 18px;
+  color: #606060;
+  margin-top: 0px;
+  margin-bottom: 10px;
+}
+
+.signupText {
+  border: 2px solid #dddddd;
+  padding-left: 40px;
+  padding-right: 40px;
+  padding-top: 10px;
+  padding-bottom: 10px;
+  border-radius: 18px;
+}
+
+.Login {
+  background-color: #2682c8;
+  color: white;
+  border-radius: 6px;
+  padding-left: 14px;
+  padding-right: 14px;
+  margin: 10px;
+}
+
+.name_text,
+.mail_text,
+.phone_text,
+.pass_text,
+.confirmpass_text {
+  font-size: 18px;
+  margin-bottom: 5px;
+}
+
+.inputField {
+  /* all inputfield class calling is to adjust icons inside input fields */
+  position: relative;
+  width: 100%;
+}
+
+.inputField input {
+  width: 100%;
+  padding: 12px 40px;
+  box-sizing: border-box;
+  border: 2px solid #cedcd6;
+  border-radius: 10px;
+  font-size: 16px;
+}
+
+.inputField .material-icons-outlined {
+  position: absolute;
+  top: 50%;
+  padding-left: 12px;
+  transform: translateY(-50%);
+  font-size: 22px;
+  color: #33b574;
+}
+
+.visibilityToggle {
+  /* for the eye icon in password field */
+  position: absolute;
+  top: 50%;
+  right: 12px;
+  transform: translateY(-50%);
+  font-size: 22px;
+  color: #33b574;
+  cursor: pointer; /* to show clickable hand cursor */
+}
+
+.SignupBTN {
+  background-color: #2682c8;
+  color: white;
+  font-family: "Poppins";
+  font-size: 18px;
+  border: none;
+  border-radius: 10px;
+  padding: 14px 28px;
+  cursor: pointer;
+  margin-top: 10px;
+  width: 100%;
+}
+
+.SignupBTN:hover {
+  background-color: #1e6bb8;
+}
+
+.nameInput,
+.mailInput,
+.phoneInput,
+.passwordInput,
+.confirmPasswordInput {
+  display: flex;
+  align-items: center;
+  border: 1px solid #cccccc;
+  border-radius: 8px;
+  padding: 12px;
+  width: 90%;
+  margin-bottom: 20px;
+}
+
+.Home:hover,
+.About:hover,
+.Signup:hover {
+  color: #50575d;
+}
+
+.Login:hover {
+  background-color: #1e6bb8;
+  color: rgb(203, 214, 233);
+}
+
+.Role {
+  font-size: 16px;
+  font-weight: 700;
+  color: #606060;
+  margin-top: 10px;
+  margin-bottom: 10px;
+  text-align: center;
+}
+
+.role-group {
+  display: flex;
+  justify-content: center;
+  gap: 20px;
+}
+
+.terms {
+  margin-top: 15px;
+  margin-bottom: 15px;
+  display: flex;
+  align-items: center;
+  gap: 8px;
+}
+
+.terms input[type="checkbox"] {
+  width: 18px;
+  height: 18px;
+  cursor: pointer;
+}
+
+.terms label {
+  font-size: 14px;
+  color: #606060;
+  cursor: pointer;
+}
+
+.termsLink {
+  text-decoration: none;
+  color: #2682c8;
+}
+
+.termsLink:hover {
+  text-decoration: underline;
+}
+
+.loginPrompt {
+  margin-top: 20px;
+  text-align: center;
+}
+
+.loginLink {
+  text-decoration: none;
+  color: #009c22;
+}
+
+.loginLink:hover {
+  text-decoration: underline;
+}
+
+.Footer {
+  margin-top: auto; /* Push footer to bottom */
+  padding: 20px;
+  text-align: center;
+  background-color: #f8fff6;
+  border-top: 1px solid #dddddd;
+  font-family: "Poppins";
+  color: #606060;
+}
