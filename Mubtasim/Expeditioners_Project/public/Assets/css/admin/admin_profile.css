@@ -66,101 +66,8 @@ body {
 
 .headerAdmin {
   text-align: center;
+  justify-content: center;
   margin-top: 20px;
-}
-/* Status Labels */
-.StatusActive {
-  color: green;
-  font-weight: bold;
-}
-
-.StatusDisabled {
-  color: red;
-  font-weight: bold;
-}
-
-/* Action Buttons */
-.ActionButtons button {
-  margin-right: 5px;
-  padding: 6px;
-  border: none;
-  border-radius: 5px;
-  cursor: pointer;
-}
-
-.ViewBtn {
-  background-color: #ff45ab;
-  color: white;
-  padding: 6px;
-  border-radius: 5px;
-  cursor: pointer;
-  text-decoration: none;
-  font-size: 12px;
-}
-.ViewBtn:hover {
-  background-color: #ff6dbd;
-  color: white;
-}
-
-.DisableBtn {
-  background-color: #ff3300;
-  color: white;
-}
-.DisableBtn:hover {
-  background-color: #ff5d35;
-  color: white;
-}
-
-/* Pets table Design */
-
-.ManagePets {
-  background-color: #ffffff;
-  padding: 20px;
-  margin: 30px auto;
-  width: 90%;
-  border-radius: 10px;
-}
-
-.ManagePetsHeader {
-  margin-bottom: 5px;
-  color: #2682c8;
-}
-
-.ManagePetsTable {
-  width: 100%;
-  border-collapse: collapse;
-}
-
-.ManagePetsTable th,
-.ManagePetsTable td {
-  padding: 12px;
-  text-align: left;
-  border-bottom: 1px solid #ddd;
-}
-
-.ManagePetsTable th {
-  background-color: #f5f5f5;
-}
-
-.ManagePetsTable tr:hover {
-  background-color: #f0f8ff;
-}
-
-/*PET-SPECIFIC STATUS*/
-
-.HealthVaccinated {
-  color: #4caf50;
-  font-weight: bold;
-}
-
-.HealthTreatment {
-  color: #ff9800;
-  font-weight: bold;
-}
-
-.HealthNotVaccinated {
-  color: #f44336;
-  font-weight: bold;
 }
 
 /* Sidebar fixed with header */
@@ -180,12 +87,7 @@ body {
   box-sizing: border-box;
 }
 
-.MainContent,
-.CountCard,
-.ManageUsers,
-.ManagePets,
-.ManageAdoptions,
-.AdminActivity {
+.MainContent {
   /*to keep all except header to bit right of sidebar*/
   margin-left: 250px; /* slightly wider than sidebar */
   padding: 20px 30px 20px 20px;
@@ -196,9 +98,9 @@ body {
 .SideBar a {
   padding: 12px 20px;
   text-decoration: none;
-  color: #333;
   font-size: 16px;
   font-weight: 500;
+  color: #000000;
   margin-bottom: 5px;
   border-radius: 8px;
   transition: all 0.3s ease; /*to animate hover effect*/
@@ -210,19 +112,113 @@ body {
   color: white;
 }
 
-.SideBar .Manage_Pets {
+.SideBar .Profile {
   background-color: #2682c8;
   color: rgb(255, 255, 255);
 }
 
-.prevBtn,
-.nextBtn {
-  margin-top: 10px;
-  font-weight: bold;
+.info {
+  color: #1c8548;
+  text-align: center;
+  margin-bottom: 20px;
+}
+
+.ProfileContainer {
+  background-color: #ffffff;
+  padding: 20px;
+  border-radius: 8px;
   justify-content: center;
-  gap: 10px;
-  align-items: center;
+
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+  max-width: 600px; /* Limit width for better readability */
+}
+
+.ProfileDetails div {
+  margin-bottom: 15px;
+  font-size: 18px;
   padding: 16px;
-  border-radius: 4px;
+  border: 1px solid #e1e3e8;
+  border-radius: 14px;
+}
+.ProfileDetails strong {
+  color: #2682c8;
+}
+
+.editProfileButton {
+  text-align: center;
+  margin-top: 20px;
+}
+.editProfileButton button {
+  background-color: #17b0a3;
+  color: white;
+  border: none;
+  padding: 12px 24px;
+  font-size: 16px;
+  border-radius: 8px;
   cursor: pointer;
+}
+.editProfileButton button:hover {
+  background-color: #22cdbe;
+}
+.MainContent {
+  margin-bottom: 20px;
+}
+
+.profile-picture {
+  text-align: center;
+  margin-bottom: 20px;
+}
+.profile_pic {
+  border-radius: 50%;
+  border: 1px solid #e1e3e8;
+  padding: 0px;
+}
+.ProfilePicture {
+  text-align: center;
+  margin-top: 20px;
+  margin-bottom: 20px;
+}
+.uploadProfileForm {
+  text-align: center;
+}
+.addProfilebtn {
+  background: #2682c8;
+  color: white;
+  padding: 10px 16px;
+  border-radius: 8px;
+  cursor: pointer;
+  margin-left: 50px;
+}
+.addProfilebtn:hover {
+  background-color: #3a84ce;
+}
+
+.note {
+  margin-left: -20px;
+}
+
+/* Profile main layout */
+.ProfileLayout {
+  display: flex;
+  gap: 40px;
+  align-items: flex-start;
+  margin-top: 40px;
+}
+
+.ProfileLeft {
+  width: 300px;
+  text-align: center;
+}
+
+/* Fix button alignment */
+.uploadProfileForm {
+  margin-top: 20px;
+}
+
+.addProfilebtn {
+  margin-left: 0;
+}
+
+.ProfileContainer {
+  flex: 10;
 }

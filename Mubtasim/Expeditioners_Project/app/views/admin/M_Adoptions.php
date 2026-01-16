@@ -1,4 +1,3 @@
-
 <!DOCTYPE html>
 <html>
   <head>
@@ -7,18 +6,19 @@
     <meta name="description" content="PawSome" />
     <meta name="author" content="Al Mubtasim" />
     <meta name="viewport" content="width=device-width,initial-scale=1.0" />
-    <link rel="stylesheet" href="M_Adoptions.css" />
-    <script src="M_Adoptions.js"></script>
-    <link rel="icon" type="image/x-icon" href="Images/Logo.png" />
+
+    <link rel="stylesheet" href="/Expeditioners_Project/public/Assets/css/admin/M_Adoptions.css" />
+    <script src="/Expeditioners_Project/public/Assets/js/admin/M_Adoptions.js" defer></script>
+
+    <link rel="icon" type="image/x-icon" href="/Expeditioners_Project/public/Assets/images/Logo.png" />
   </head>
 
   <body class="Body">
-    <!-- Top Header with Navigation Bar and Registration Links -->
     <header>
       <div class="header">
-        <a href="home.html" class="SiteName">
+        <a href="/Expeditioners_Project/public/admin/dashboard" class="SiteName">
           <img
-            src="Images/Logo.png"
+            src="/Expeditioners_Project/public/Assets/images/Logo.png"
             alt="Website Logo"
             width="100"
             height="100"
@@ -27,8 +27,8 @@
         </a>
 
         <div class="nav_bar">
-          <a class="Home" href="home.html">Home</a>
-          <a class="Logout" href="home.html">Logout</a>
+          <a class="Home" href="/Expeditioners_Project/public/admin/dashboard">Home</a>
+          <a class="Logout" href="/Expeditioners_Project/public/logout">Logout</a>
         </div>
       </div>
     </header>
@@ -39,78 +39,46 @@
     </div>
 
     <div class="SideBar">
-      <a class="Overview" href="AdminDashboard.html">Overview</a>
-      <a class="Manage_Users" href="M_Users.html">Manage Users</a>
-      <a class="Manage_Pets" href="M_Pets.html">Manage Pets</a>
-      <a class="Manage_Adoptions" href="M_Adoptions.html">Manage Adoptions</a>
+      <a class="Overview" href="/Expeditioners_Project/public/admin/dashboard">Overview</a>
+      <a class="Manage_Users" href="/Expeditioners_Project/public/admin/users">Manage Users</a>
+      <a class="Manage_Pets" href="/Expeditioners_Project/public/admin/pets">Manage Pets</a>
+      <a class="Manage_Adoptions" href="/Expeditioners_Project/public/admin/adoptions">Manage Adoptions</a>
+      <a class="Profile" href="/Expeditioners_Project/public/admin/profile">Profile</a>
     </div>
-    
+
     <!----Manage Adoptions-->
     <div class="ManageAdoptions">
       <h2 class="ManageAdoptionsHeader">Manage Adoptions</h2>
-      <p>Review and manage all adoption requests</p>
+      <p class="TSubHeader">Review and manage all adoption requests</p>
 
       <table class="ManageAdoptionsTable">
-        <tr>
-          <th>Adoption ID</th>
-          <th>Pet Name</th>
-          <th>Adopter</th>
-          <th>Shelter</th>
-          <th>Status</th>
-          <th>Requested At</th>
-          <th>Actions</th>
-        </tr>
+        <thead>
+          <tr>
+            <th>Adoption ID</th>
+            <th>Pet Name</th>
+            <th>Adopter</th>
+            <th>Shelter</th>
+            <th>Status</th>
+            <th>Requested At</th>
+            <th>Actions</th>
+          </tr>
+        </thead>
 
-        <tr>
-          <td>A001</td>
-          <td>Buddy</td>
-          <td>John Doe</td>
-          <td>Paw Rescue Bangladesh</td>
-          <td class="StatusPending">Pending</td>
-          <td>2025-12-30 10:15</td>
-          <td class="ActionButtons">
-            <button class="ApproveBtn">Approve</button>
-            <button class="RejectBtn">Reject</button>
-            <button class="ViewBtn">View</button>
-          </td>
-        </tr>
-
-        <tr>
-          <td>A002</td>
-          <td>Buddy</td>
-          <td>John Doe</td>
-          <td>Paw Rescue Bangladesh</td>
-          <td class="StatusApproved">Approved</td>
-          <td>2025-12-29 14:30</td>
-          <td class="ActionButtons">
-            <button class="ViewBtn">View</button>
-          </td>
-        </tr>
-
-        <tr>
-          <td>A003</td>
-          <td>Luna</td>
-          <td>John Doe</td>
-          <td>Paw Rescue Bangladesh</td>
-          <td class="StatusCompleted">Completed</td>
-          <td>2025-12-28 11:00</td>
-          <td class="ActionButtons">
-            <button class="ViewBtn">View</button>
-          </td>
-        </tr>
-
-        <tr>
-          <td>A004</td>
-          <td>Luna</td>
-          <td>John Doe</td>
-          <td>Paw Rescue Bangladesh</td>
-          <td class="StatusRejected">Rejected</td>
-          <td>2025-12-27 16:45</td>
-          <td class="ActionButtons">
-            <button class="ViewBtn">View</button>
-          </td>
-        </tr>
+      <tbody id="adoptionsTableBody">
+  <tr>
+    <td colspan="7">Loading adoptions...</td>
+  </tr>
+</tbody>
       </table>
+
+      <!-- PAGINATION FOOTER -->
+     <div class="UsersTableFooter">
+  <p id="adoptionsShowingText">Showing 0 out of 0</p>
+  <div>
+    <button id="prevBtn" class="prevBtn">Prev</button>
+    <button id="nextBtn" class="nextBtn">Next</button>
+  </div>
+</div>
     </div>
 
   </body>

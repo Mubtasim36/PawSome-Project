@@ -1,7 +1,7 @@
 -- =========================
 -- ADOPTIONS TABLE
 -- =========================
-CREATE TABLE IF NOT EXISTS `Adoptions Table` (
+CREATE TABLE IF NOT EXISTS `pets` (
     adoption_id INT AUTO_INCREMENT PRIMARY KEY,
     pet_id INT NOT NULL,
     adopter_id INT NOT NULL,
@@ -29,7 +29,7 @@ CREATE TABLE IF NOT EXISTS `Adoptions Table` (
 -- =========================
 -- SAMPLE ADOPTION DATA
 -- =========================
-INSERT INTO `Adoptions Table`
+INSERT INTO `pets`
 (pet_id, adopter_id, shelter_id, adoption_status, reviewed_at)
 VALUES
 -- Pending adoption for Buddy
