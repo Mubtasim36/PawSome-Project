@@ -7,16 +7,13 @@ class UsersApiController
 
     public function __construct()
     {
-        // session safety (in case API is hit before index.php session_start)
-        if (session_status() === PHP_SESSION_NONE) {
-            session_start();
-        }
-
         $this->model = new AdminUsersModel();
     }
 
-    private function requireAdminApi(): void
+    private function requireAdmin(): void
     {
+        if (session_status() === PHP_SESSION_NONE) session_start();
+
         if (!isset($_SESSION['user']) || ($_SESSION['user']['role'] ?? '') !== 'admin') {
             http_response_code(401);
             header("Content-Type: application/json; charset=utf-8");
@@ -28,20 +25,22 @@ class UsersApiController
     // GET /api/admin/users?page=1&limit=10
     public function index(): void
     {
-        $this->requireAdminApi();
+        $this->requireAdmin();
 
-        $page  = (int)($_GET['page'] ?? 1);
-        $limit = (int)($_GET['limit'] ?? 10);
+        header("Content-Type: application/json; charset=utf-8");
+
+        $page  = isset($_GET['page']) ? (int)$_GET['page'] : 1;
+        $limit = isset($_GET['limit']) ? (int)$_GET['limit'] : 10;
 
         if ($page < 1) $page = 1;
-        if ($limit < 1 || $limit > 50) $limit = 10;
+        if ($limit < 1) $limit = 10;
+        if ($limit > 50) $limit = 50;
 
         $total  = $this->model->countUsers();
         $offset = ($page - 1) * $limit;
 
         $users = $this->model->getUsersPage($offset, $limit);
 
-        header("Content-Type: application/json; charset=utf-8");
         echo json_encode([
             'total' => $total,
             'page'  => $page,

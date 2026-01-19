@@ -21,7 +21,7 @@ class AdminStatsApiController
         }
     }
 
-    // GET /api/admin/stats
+    //GET /api/admin/stats
     public function index()
     {
         $this->requireAdmin();

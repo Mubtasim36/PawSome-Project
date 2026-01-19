@@ -68,7 +68,7 @@ document.getElementById("ChangeBtn").addEventListener("click", () => {
   if (validateLogin()) {
     alert("Password changed successfully!");
 
-    // redirect to login page after alert
+    //redirect to login page after alert
     window.location.href = "login.html";
   }
 });

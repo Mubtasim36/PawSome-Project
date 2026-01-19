@@ -18,14 +18,14 @@ class M_AdoptionsController
         }
     }
 
-    // GET /admin/adoptions
+    //GET /admin/adoptions
     public function index()
     {
         $this->requireAdmin();
         require dirname(__DIR__, 2) . '/views/admin/M_Adoptions.php';
     }
 
-    // POST /admin/adoptions/status
+    //POST /admin/adoptions/status
     public function updateStatus()
     {
         $this->requireAdmin();
@@ -46,7 +46,7 @@ class M_AdoptionsController
         exit;
     }
 
-    // POST /admin/adoptions/delete
+    //POST /admin/adoptions/delete
     public function delete()
     {
         $this->requireAdmin();

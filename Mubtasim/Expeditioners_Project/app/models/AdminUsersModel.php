@@ -61,7 +61,7 @@ public function countUsers(): int
 
 public function getUsersPage(int $offset, int $limit): array
 {
-    $sql = "SELECT user_id, full_name, username, email, phone, role
+    $sql = "SELECT user_id, full_name, username, email, phone, role, created_at
             FROM users
             ORDER BY user_id DESC
             LIMIT ? OFFSET ?";
@@ -78,4 +78,41 @@ public function getUsersPage(int $offset, int $limit): array
     $stmt->close();
     return $rows;
 }
+
+
+public function getUserById(int $userId): ?array
+{
+    $sql = "SELECT user_id, full_name, username, email, phone, role, created_at
+            FROM users
+            WHERE user_id = ?
+            LIMIT 1";
+
+    $stmt = $this->conn->prepare($sql);
+    if (!$stmt) return null;
+
+    $stmt->bind_param("i", $userId);
+    $stmt->execute();
+    $res = $stmt->get_result();
+    $row = $res ? $res->fetch_assoc() : null;
+    $stmt->close();
+
+    return $row ?: null;
+}
+
+public function makeAdmin(int $userId): bool
+{
+    if ($userId <= 0) return false;
+
+    $sql = "UPDATE users SET role='admin' WHERE user_id=? AND role <> 'admin'";
+    $stmt = $this->conn->prepare($sql);
+    if (!$stmt) return false;
+
+    $stmt->bind_param("i", $userId);
+    $ok = $stmt->execute();
+    $stmt->close();
+
+    return $ok;
+}
+
+
 }

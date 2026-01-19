@@ -8,7 +8,7 @@ document.addEventListener("DOMContentLoaded", () => {
   }
 
   btn.addEventListener("click", () => {
-    input.click(); // THIS opens file picker
+    input.click(); //THIS opens file picker
   });
 
   input.addEventListener("change", () => {
@@ -30,7 +30,7 @@ document.addEventListener("DOMContentLoaded", () => {
       return;
     }
 
-    // auto-submit form
+    //auto-submit form
     input.closest("form").submit();
   });
 });

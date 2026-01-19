@@ -18,14 +18,14 @@ class M_PetsController
         }
     }
 
-    // GET /admin/pets
+    //GET /admin/pets
     public function index()
     {
         $this->requireAdmin();
         require dirname(__DIR__, 2) . '/views/admin/M_Pets.php';
     }
 
-    // POST /admin/pets/delete
+    //POST /admin/pets/delete
     public function delete()
     {
         $this->requireAdmin();
@@ -40,7 +40,7 @@ class M_PetsController
         if ($petId > 0) {
             $this->model->deletePet($petId);
 
-            // OPTIONAL: log activity (only if you already use ActivityLogModel)
+            //OPTIONAL: log activity (only if you already use ActivityLogModel)
             if (file_exists(dirname(__DIR__, 2) . '/models/ActivityLogModel.php')) {
                 require_once dirname(__DIR__, 2) . '/models/ActivityLogModel.php';
                 $log = new ActivityLogModel();

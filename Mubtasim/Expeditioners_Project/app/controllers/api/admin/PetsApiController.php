@@ -23,7 +23,7 @@ class PetsApiController
         }
     }
 
-    // GET /api/admin/pets?page=1&limit=10
+    //GET /api/admin/pets?page=1&limit=10
     public function index(): void
     {
         $this->requireAdminApi();

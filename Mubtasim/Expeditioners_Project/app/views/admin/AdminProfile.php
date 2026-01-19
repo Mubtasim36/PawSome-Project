@@ -88,7 +88,8 @@
       </button>
 
       <p class="note">
-        *Allowed: JPEG / PNG • Max size: 5MB*
+        *Allowed Format: JPEG / PNG <br>
+        • Max size: 5MB*
       </p>
     </form>
   </div>
@@ -123,13 +124,34 @@
       </div>
     </div>
 
-    <div class="editProfileButton">
+
+    <div class="userActions">
+    <div>
       <button
         type="button"
         onclick="location.href='/Expeditioners_Project/public/admin/edit_profile';"
+                       class="editProfileButton"
+
       >
         Edit Profile
+        
       </button>
+    </div>
+    <?php if (!empty($_GET['del_err'])): ?>
+  <div class="formError" style="margin-top:12px;">
+    <?= htmlspecialchars($_GET['del_err']) ?>
+  </div>
+<?php endif; ?>
+
+<form method="POST" action="/Expeditioners_Project/public/admin/profile/delete" style="margin-top:14px;">
+  <button
+    type="submit"
+    class="DelBtn"
+    onclick="return confirm('Are you sure? This will permanently delete your admin account.');"
+  >
+    Delete Account
+  </button>
+</form>
     </div>
   </div>
 </div>

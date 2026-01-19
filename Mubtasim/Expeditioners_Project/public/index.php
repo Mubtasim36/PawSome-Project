@@ -19,15 +19,15 @@ $ROOT = dirname(__DIR__);
    ========================= */
 $path = parse_url($_SERVER['REQUEST_URI'], PHP_URL_PATH) ?? '/';
 
-// normalize slashes + ensure leading slash
+//normalize slashes + ensure leading slash
 $path = '/' . ltrim($path, '/');
 $path = preg_replace('#/+#', '/', $path);
 
-// remove trailing slash (except root)
+//remove trailing slash (except root)
 $path = rtrim($path, '/');
 if ($path === '') $path = '/';
 
-// Remove project prefix so routes remain clean: /admin/users instead of /Expeditioners_Project/public/admin/users
+//Remove project prefix so routes remain clean: /admin/users instead of /Expeditioners_Project/public/admin/users
 $prefix = '/Expeditioners_Project/public';
 if (strpos($path, $prefix) === 0) {
     $path = substr($path, strlen($prefix));
@@ -36,7 +36,7 @@ if (strpos($path, $prefix) === 0) {
     if ($path === '') $path = '/';
 }
 
-// extra safety: in case URL is /Expeditioners_Project/api/... (without /public)
+//extra safety: in case URL is /Expeditioners_Project/api/... (without /public)
 $prefix2 = '/Expeditioners_Project';
 if (strpos($path, $prefix2) === 0) {
     $path = substr($path, strlen($prefix2));
@@ -52,26 +52,26 @@ try {
        ========================= */
     if (strpos($path, '/api/') === 0) {
 
-        // GET /api/admin/stats
+        //GET /api/admin/stats
         if ($path === '/api/admin/stats') {
             require_once $ROOT . '/app/controllers/api/admin/AdminStatsApiController.php';
             (new AdminStatsApiController())->index();
             exit;
         }
 
-        // GET /api/admin/users?page=1&limit=10
+        //GET /api/admin/users?page=1&limit=10
         if ($path === '/api/admin/users') {
             require_once $ROOT . '/app/controllers/api/admin/UsersApiController.php';
             (new UsersApiController())->index();
             exit;
         }
-// GET /api/admin/pets?page=1&limit=10
+//GET /api/admin/pets?page=1&limit=10
 if ($path === '/api/admin/pets') {
     require_once $ROOT . '/app/controllers/api/admin/PetsApiController.php';
     (new PetsApiController())->index();
     exit;
 }
-// GET /api/admin/adoptions?page=1&limit=10
+//GET /api/admin/adoptions?page=1&limit=10
 if ($path === '/api/admin/adoptions') {
     require_once $ROOT . '/app/controllers/api/admin/AdoptionsApiController.php';
     (new AdoptionsApiController())->index();
@@ -92,7 +92,7 @@ if ($path === '/api/admin/adoptions') {
         exit;
     }
 
-    // Public Routes
+    //Public Routes
     if ($path === '/pets') {
         require_once $ROOT . '/app/controllers/BrowsePetsController.php';
         (new BrowsePetsController())->index();
@@ -105,7 +105,7 @@ if ($path === '/api/admin/adoptions') {
         exit;
     }
 
-    // Authentication Routes
+    //Authentication Routes
     if ($path === '/login') {
         require_once $ROOT . '/app/controllers/AuthController.php';
         $auth = new AuthController();
@@ -189,19 +189,55 @@ if ($path === '/admin/adoptions/delete' && $_SERVER['REQUEST_METHOD'] === 'POST'
     (new M_AdoptionsController())->delete();
     exit;
 }
-// Admin Profile Page
+//Admin Profile Page
 if ($path === '/admin/profile') {
     require_once $ROOT . '/app/controllers/admin/AdminProfileController.php';
     (new AdminProfileController())->index();
     exit;
 }
 
-// Upload Profile Picture
+//Upload Profile Picture
 if ($path === '/admin/profile/upload-picture' && $_SERVER['REQUEST_METHOD'] === 'POST') {
     require_once $ROOT . '/app/controllers/admin/AdminProfileController.php';
     (new AdminProfileController())->uploadPicture();
     exit;
 }
+
+if ($path === '/admin/edit_profile') {
+    require_once $ROOT . '/app/controllers/admin/AdminProfileController.php';
+    $c = new AdminProfileController();
+
+    if ($_SERVER['REQUEST_METHOD'] === 'POST') {
+        $c->updateProfile();
+    } else {
+        $c->edit();
+    }
+    exit;
+}
+
+
+//View User Profile
+if ($path === '/admin/users/view') {
+    require_once $ROOT . '/app/controllers/admin/M_UsersController.php';
+    (new M_UsersController())->view();
+    exit;
+}
+
+//deleting admin account
+if ($path === '/admin/profile/delete' && $_SERVER['REQUEST_METHOD'] === 'POST') {
+    require_once $ROOT . '/app/controllers/admin/AdminProfileController.php';
+    (new AdminProfileController())->deleteAccount();
+    exit;
+}
+
+
+// Manage Users routes
+if ($path === '/admin/users/make-admin' && $_SERVER['REQUEST_METHOD'] === 'POST') {
+    require_once $ROOT . '/app/controllers/admin/M_UsersController.php';
+    (new M_UsersController())->makeAdmin();
+    exit;
+}
+
     //404 Not Found
     http_response_code(404);
     echo "<h1>404 Not Found</h1>";

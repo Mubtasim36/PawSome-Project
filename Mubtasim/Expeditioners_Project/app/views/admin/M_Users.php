@@ -27,7 +27,7 @@
         </a>
 
         <div class="nav_bar">
-          <a class="Home" href="/Expeditioners_Project/public/admin/dashboard">Home</a>
+          <a class="Home" href="/Expeditioners_Project/public/home">Home</a>
           <a class="Logout" href="/Expeditioners_Project/public/logout">Logout</a>
         </div>
       </div>
@@ -47,7 +47,7 @@
 
     </div>
 
-    <div class="ManageUsers">
+      <div class="ManageUsers">
       <h2 class="ManageUsersHeader">Manage Users</h2>
       <p class="TSubHeader">View and manage adopter and shelter accounts</p>
 
@@ -58,7 +58,7 @@
       <th>Name</th>
       <th>Email</th>
       <th>Role</th>
-      <th>Status</th>
+      <th>Join Date</th>
       <th>Actions</th>
     </tr>
   </thead>

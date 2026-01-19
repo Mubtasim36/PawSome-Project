@@ -135,14 +135,7 @@ body {
   color: white;
 }
 
-.EditBtn {
-  background-color: #2196f3;
-  color: white;
-}
-.EditBtn:hover {
-  background-color: #53b2ff;
-  color: white;
-}
+
 
 /* Status Styles */
 .StatusPending {

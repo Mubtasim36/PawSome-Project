@@ -1,6 +1,6 @@
 document.addEventListener("DOMContentLoaded", function () {
   const filter = document.getElementById("statusFilter");
-  const cards = document.querySelectorAll(".Browse_Cards > div"); // Selecting All pet cards
+  const cards = document.querySelectorAll(".Browse_Cards > div"); //Selecting All pet cards
 
   filter.addEventListener("change", function () {
     //to check if dropdown option selection is changed
@@ -12,9 +12,9 @@ document.addEventListener("DOMContentLoaded", function () {
         .textContent.toLowerCase();
 
       if (selected === "all" || statusText === selected) {
-        card.style.display = "block"; // Show the card
+        card.style.display = "block"; //Show the card
       } else {
-        card.style.display = "none"; // Hide the card
+        card.style.display = "none"; //Hide the card
       }
     });
   });

@@ -10,10 +10,10 @@ class PetModel
         $db = new Database();
         $this->conn = $db->getConnection();
 
-        // TEMP DEBUG (remove after confirm):
-        // $r = $this->conn->query("SELECT DATABASE() AS db");
-        // echo "Connected DB = " . ($r ? $r->fetch_assoc()['db'] : 'UNKNOWN');
-        // exit;
+        //TEMP DEBUG (remove after confirm):
+        //$r = $this->conn->query("SELECT DATABASE() AS db");
+        //echo "Connected DB = " . ($r ? $r->fetch_assoc()['db'] : 'UNKNOWN');
+        //exit;
     }
 
     public function getAllForBrowse(): array
@@ -24,7 +24,7 @@ class PetModel
 
         $result = $this->conn->query($sql);
 
-        // DO NOT silently return []
+        //DO NOT silently return []
         if (!$result) {
             die("SQL Error: " . $this->conn->error);
         }

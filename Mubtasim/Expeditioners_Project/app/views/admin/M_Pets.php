@@ -60,7 +60,7 @@
             <th>Breed</th>
             <th>Age</th>
             <th>Health</th>
-            <th>Status</th>
+            <th>Adoption Status</th>
             <th>Shelter ID</th>
             <th>Actions</th>
           </tr>

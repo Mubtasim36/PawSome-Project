@@ -144,7 +144,7 @@ body {
   color: #2682c8;
 }
 
-.editProfileButton {
+.saveChangesBtn {
   text-align: center;
   margin-top: 20px;
   background-color: #17b0a3;
@@ -155,9 +155,31 @@ body {
   border-radius: 8px;
   cursor: pointer;
 }
-.editProfileButton:hover {
+.saveChangesBtn:hover {
   background-color: #22cdbe;
 }
+
+.CancelBtn {
+  text-align: center;
+  margin-top: 20px;
+  background-color: #ffffff;
+  color: 17b0a3;
+  border: 1px solid #17b0a3;
+  padding: 12px 24px;
+  font-size: 16px;
+  border-radius: 8px;
+  cursor: pointer;
+}
+.CancelBtn:hover {
+  background-color: #e6f7f5;
+}
+
+.editProfileButton{
+    text-align: center;
+    margin-top: 20px;
+}
+
+
 .MainContent {
   margin-bottom: 20px;
 }
@@ -186,7 +208,7 @@ body {
   border-radius: 8px;
   cursor: pointer;
   margin-left: 50px;
-  border: none;
+  border:none;
 }
 .addProfilebtn:hover {
   background-color: #3a84ce;
@@ -220,42 +242,40 @@ body {
 }
 
 .ProfileContainer {
-  flex: 10;
+  padding-left: 40px;
+  padding-right: 100px;
 }
 
-.DelBtn {
-  background: #d80229;
-  color: #fff;
-  border: none;
-  padding: 12px 18px;
-  border-radius: 8px;
-  cursor: pointer;
+
+.ProfileInput {
+  width: 90%; /* IMPORTANT */
+  padding: 10px;
+  border: 1px solid #ccc;
+  border-radius: 10px;
+    font-size: 16px;
+
 }
-.DelBtn:hover {
-  background: #8b0019;
+
+.DetailSmallBox{
+    padding: right 55555px;
 }
+
 .formError {
+  margin: 12px 0;
+  padding: 12px 14px;
+  border: 1px solid #ffb3b3;
+  background: #ffe9e9;
   color: #b00020;
+  border-radius: 10px;
   font-size: 14px;
 }
 
-.MakeBtn {
-  text-align: center;
-  margin-top: 20px;
-  background: #f9d400;
-  color: #000000;
-  border: none;
-  padding: 12px 24px;
-  font-size: 16px;
-  border-radius: 8px;
-  cursor: pointer;
-}
-
-.MakeBtn:hover {
-  background: #c7a500;
-}
-
-.userActions {
-  text-align: center;
-  margin-top: 20px;
+.formSuccess {
+  margin: 12px 0;
+  padding: 12px 14px;
+  border: 1px solid #a8e6c1;
+  background: #eafff2;
+  color: #1c8548;
+  border-radius: 10px;
+  font-size: 14px;
 }
