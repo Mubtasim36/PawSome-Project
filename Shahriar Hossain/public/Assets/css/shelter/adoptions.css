@@ -1,0 +1,35 @@
+table { width:100%; border-collapse: collapse; font-family:Poppins; }
+th, td { border-bottom:1px solid #eeeeee; padding: 10px; text-align:left; }
+th { color:#373c41; }
+.badge { padding: 4px 10px; border-radius: 999px; border:1px solid #ddd; font-size: 13px; }
+.badge.Pending { border-color:#ffa81d; color:#a86a00; }
+.badge.Approved { border-color:#00a455; color:#008142; }
+.badge.Rejected { border-color:#c0392b; color:#a53125; }
+.badge.Completed { border-color:#2682c8; color:#1e6bb8; }
+.actionBtn {
+  padding: 8px 10px;
+  border-radius: 10px;
+  border: 1px solid #dddddd;
+  background: #fff;
+  cursor: pointer;
+  font-family: Poppins;
+}
+
+/* ✅ Action colors */
+.actionBtn.approve,
+.actionBtn.complete {
+  border-color: #00a455;
+  color: #008142;
+}
+.actionBtn.reject {
+  border-color: #c0392b;
+  color: #a53125;
+}
+
+.actionBtn.approve:hover,
+.actionBtn.complete:hover {
+  background: #e1fff0;
+}
+.actionBtn.reject:hover {
+  background: #ffecec;
+}
