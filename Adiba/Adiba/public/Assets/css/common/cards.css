@@ -1,0 +1,229 @@
+.CountCard {
+  display: flex;
+  justify-content: space-around;
+  align-items: stretch;
+  margin-top: 30px;
+  gap: 18px;
+  flex-wrap: wrap;
+}
+
+.UserCount,
+.PetsCount,
+.AdoptionCount {
+  background-color: #ffffff;
+  border-radius: 10px;
+  padding: 20px;
+  margin: 0;
+  width: 280px;
+  text-align: center;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+.UserCount h2,
+.PetsCount h2,
+.AdoptionCount h2 {
+  font-size: 36px;
+  color: #2682c8;
+  margin: 0 0 6px 0;
+}
+
+.CardGrid {
+  display: grid;
+  grid-template-columns: repeat(3, minmax(0, 1fr));
+  gap: 18px;
+  margin: 24px 0;
+}
+
+@media (max-width: 1000px) {
+  .CardGrid { grid-template-columns: 1fr; }
+}
+
+.ActionCard {
+  text-decoration: none;
+  background: #fff;
+  border: 1px solid #e5e7eb;
+  border-radius: 12px;
+  padding: 18px;
+  box-shadow: 0 4px 6px rgba(0,0,0,0.06);
+}
+
+.ActionCard h3 {
+  margin: 0 0 6px 0;
+  font-size: 20px;
+  color: #111827;
+}
+
+.ActionCard p {
+  margin: 0;
+  color: #50575d;
+  line-height: 1.5;
+}
+
+.Table {
+  width: 100%;
+  border-collapse: collapse;
+}
+
+.Table th,
+.Table td {
+  padding: 12px;
+  text-align: left;
+  border-bottom: 1px solid #ddd;
+  vertical-align: top;
+}
+
+.Table th {
+  background-color: #f5f5f5;
+}
+
+.Badge {
+  display: inline-block;
+  padding: 4px 10px;
+  border-radius: 999px;
+  font-size: 12px;
+  font-weight: 600;
+}
+
+.BadgePending { background: #fff7ed; color: #9a3412; }
+.BadgeApproved { background: #ecfeff; color: #155e75; }
+.BadgeCompleted { background: #f0fdf4; color: #166534; }
+.BadgeRejected { background: #fef2f2; color: #991b1b; }
+
+.Btn {
+  border: none;
+  cursor: pointer;
+  border-radius: 6px;
+  padding: 8px 12px;
+  font-size: 14px;
+}
+
+.BtnPrimary {
+  background-color: #2682c8;
+  color: #fff;
+}
+
+.BtnPrimary:hover { background-color: #000000; color: rgb(203, 214, 233); }
+
+.BtnDanger {
+  background-color: #ff3300;
+  color: white;
+}
+
+.BtnDanger:hover { background-color: #ff5d35; }
+
+.LinkBtn {
+  text-decoration: none;
+  color: #2682c8;
+  font-weight: 600;
+}
+
+.Loading {
+  padding: 14px;
+  color: #50575d;
+}
+
+/* Action Buttons (reference-compatible) */
+.EditBtn,
+.ViewBtn,
+.DisableBtn,
+.EnableBtn {
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  padding: 10px 14px;
+  font-weight: 600;
+  text-decoration: none;
+  display: inline-block;
+  text-align: center;
+}
+
+.ViewBtn { background-color: #ff45ab; color: white; }
+.ViewBtn:hover { background-color: #ff6dbd; color: white; }
+
+.EditBtn { background-color: #2196f3; color: white; }
+.EditBtn:hover { background-color: #53b2ff; color: white; }
+
+.DisableBtn { background-color: #ff3300; color: white; }
+.DisableBtn:hover { background-color: #ff5d35; color: white; }
+
+.EnableBtn { background-color: #4caf50; color: white; }
+.EnableBtn:hover { background-color: #7aea7d; color: white; }
+
+.RowLink {
+  color: #2682c8;
+  font-weight: 600;
+  text-decoration: none;
+}
+.RowLink:hover { text-decoration: underline; }
+
+.Muted { color: #6b7280; }
+
+.SimpleTable {
+  width: 100%;
+  border-collapse: collapse;
+}
+
+.SimpleTable th,
+.SimpleTable td {
+  padding: 12px;
+  text-align: left;
+  border-bottom: 1px solid #ddd;
+  vertical-align: top;
+}
+
+.SimpleTable th {
+  background-color: #f5f5f5;
+}
+
+.EmptyState {
+  padding: 14px;
+  background: #ffffff;
+  border: 1px dashed #d1d5db;
+  border-radius: 10px;
+  color: #50575d;
+}
+
+/* Status pills (used in recent requests + requests table) */
+.StatusPill {
+  display: inline-block;
+  font-size: 12px;
+  font-weight: 700;
+  padding: 6px 10px;
+  border-radius: 999px;
+  border: 1px solid #dbeafe;
+  background: #eff6ff;
+  color: #1d4ed8;
+}
+
+.PillPending {
+  border-color: #fef3c7;
+  background: #fffbeb;
+  color: #92400e;
+}
+
+.PillApproved {
+  border-color: #bbf7d0;
+  background: #f0fdf4;
+  color: #166534;
+}
+
+.PillRejected {
+  border-color: #fecaca;
+  background: #fef2f2;
+  color: #991b1b;
+}
+
+.PillCompleted {
+  border-color: #c7d2fe;
+  background: #eef2ff;
+  color: #3730a3;
+}
+
+.RecentStatus {
+  padding: 14px;
+  border: 1px solid #e5e7eb;
+  border-radius: 10px;
+  background: #ffffff;
+  color: #111827;
+  font-weight: 600;
+}
