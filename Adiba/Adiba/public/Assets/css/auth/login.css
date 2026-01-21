@@ -1,0 +1,52 @@
+.AuthWrap {
+  min-height: calc(100vh - 90px);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 30px 16px;
+}
+
+.AuthCard {
+  width: 100%;
+  max-width: 520px;
+  background: #ffffff;
+  border: 1px solid #e5e7eb;
+  border-radius: 14px;
+  padding: 28px 26px;
+  box-shadow: 0 6px 14px rgba(0, 0, 0, 0.06);
+}
+
+.AuthTitle { margin: 0; font-size: 30px; color: #111827; }
+.AuthSub { margin: 10px 0 20px; color: #4b5563; }
+
+.AuthForm { display: flex; flex-direction: column; gap: 10px; }
+.FieldLabel { font-size: 14px; color: #111827; font-weight: 500; }
+.FieldInput {
+  padding: 12px 12px;
+  border-radius: 10px;
+  border: 1px solid #d1d5db;
+  font-size: 15px;
+  outline: none;
+  background: #fff;
+}
+.FieldInput:focus { border-color: #2682c8; box-shadow: 0 0 0 3px rgba(38, 130, 200, 0.15); }
+
+.PrimaryBtn {
+  margin-top: 6px;
+  padding: 12px 14px;
+  border: none;
+  border-radius: 10px;
+  background: #2682c8;
+  color: #fff;
+  font-weight: 600;
+  cursor: pointer;
+}
+.PrimaryBtn:hover { background: #000000; color: rgb(203, 214, 233); }
+
+.FormMessage { min-height: 20px; margin-top: 8px; font-size: 14px; }
+.MsgOk { color: #15803d; font-weight: 600; }
+.MsgErr { color: #b91c1c; font-weight: 600; }
+
+.AuthLinks { margin-top: 16px; display: flex; justify-content: center; gap: 10px; color: #4b5563; }
+.AuthLinks a { color: #2682c8; text-decoration: none; font-weight: 600; }
+.AuthLinks a:hover { text-decoration: underline; }

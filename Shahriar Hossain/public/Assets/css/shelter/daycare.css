@@ -1,0 +1,9 @@
+h3 { margin: 0 0 10px 0; color:#373c41; }
+h4 { margin: 14px 0 8px 0; color:#373c41; }
+hr { border:none; border-top:1px solid #eeeeee; margin: 16px 0; }
+.slotItem, .logItem {
+  border:1px solid #e5e5e5;
+  border-radius: 14px;
+  padding: 12px;
+}
+.slotRow { display:flex; justify-content:space-between; gap: 10px; align-items:center; }

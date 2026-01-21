@@ -1,0 +1,372 @@
+html,
+body {
+  /* Ensures full height for body and html */
+  margin: 0;
+  padding: 0;
+  background-color: #fefffe;
+  scroll-behavior: smooth; /* for smooth scrolling on clicking about button */
+}
+.header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 10px 20px;
+  background-color: #f8fff6;
+  margin: 0px;
+  padding: 0px;
+  border-bottom: 1px solid #dddddd;
+}
+.SiteName {
+  display: flex;
+  align-items: center;
+  font-family: "Poppins";
+  font-size: 48px;
+  color: #2682c8;
+  margin: 0px;
+  padding: 0px;
+  font-weight: bold;
+  text-decoration: none;
+}
+.Home,
+.About,
+.Login,
+.Signup {
+  font-family: Poppins;
+  font-size: 16px;
+  padding: 10px;
+  text-decoration: none;
+  color: rgb(52, 49, 49);
+}
+
+.nav_bar {
+  display: flex;
+  margin-right: 80px;
+  align-items: center;
+}
+
+.Signup {
+  background-color: #2682c8;
+  color: white;
+  border-radius: 6px;
+  padding-left: 14px;
+  padding-right: 14px;
+  margin: 10px;
+}
+.Home {
+  font-weight: bold;
+}
+.Home:hover,
+.About:hover,
+.Login:hover {
+  color: #50575d;
+}
+
+.Signup:hover {
+  background-color: #1e6bb8;
+  color: rgb(203, 214, 233);
+}
+
+.tagline {
+  margin-top: 0px;
+  font-family: "Poppins";
+  font-size: 52px;
+  color: #373c41;
+}
+
+.highlight-find {
+  color: #04a743;
+}
+
+.highlight-care {
+  color: #04a743;
+}
+
+.highlight-pets {
+  color: #04a743;
+}
+
+.Herosection {
+  display: flex;
+  padding-top: 80px;
+  padding-left: 80px;
+  padding-right: 80px;
+  padding-bottom: 35px;
+  gap: 40px;
+  border-bottom: 1px solid #dddddd;
+  margin-bottom: 40px;
+}
+
+.Heroimg img {
+  width: 700px;
+  height: auto;
+  border-radius: 15px;
+}
+
+.Description {
+  font-family: "Poppins";
+  font-size: 18px;
+  color: #606060;
+  margin-top: 20px;
+  padding-bottom: 5%;
+}
+
+.Browse,
+.Get_Started {
+  font-family: "Poppins";
+  font-size: 18px;
+  align-items: flex-end;
+  text-decoration: none;
+  border-radius: 10px;
+  padding: 14px;
+  padding-left: 26px;
+  padding-right: 26px;
+  margin: 20px;
+  margin-left: 0%; /* to align with other texts */
+  margin-bottom: 20px;
+}
+.Browse {
+  background-color: #2682c8;
+  color: white;
+}
+.Browse:hover {
+  background-color: #1e6bb8;
+}
+
+.Get_Started {
+  color: #2682c8;
+  border: 2px solid #2682c8;
+}
+.Get_Started:hover {
+  background-color: #e6f0fa;
+}
+.TrustSection {
+  display: flex;
+  gap: 30px;
+}
+.Trust,
+.Trust2 {
+  /* for list texts */
+  font-family: "Poppins";
+  font-size: 16px;
+  margin-top: 60px;
+  margin-bottom: 0px;
+  gap: 30px;
+}
+
+.Trust {
+  color: #00a455;
+}
+.Trust2 {
+  color: #2682c8;
+}
+
+.Features {
+  display: flex; /* to align all text side by side */
+  padding: 40px 80px; /* first value is top-bottom, second is left-right */
+  gap: 40px;
+  margin: 0%;
+  border-bottom: 1px solid #dddddd;
+}
+
+.tagline2 {
+  /*A calm space for pet adoption*/
+  font-family: "Poppins";
+  font-size: 32px;
+  margin-top: 0px;
+  margin: 0px;
+  color: #373c41;
+}
+
+.description2 {
+  /*PawSome streamlines....*/
+  font-family: "Poppins";
+  font-size: 16px;
+  color: #606060;
+  width: 500px;
+}
+
+.Adopters {
+  padding-left: 20px;
+  padding-right: 20px;
+  border: 2px solid #72b292;
+  border-radius: 20px;
+  background-color: #e1fff0;
+}
+.Shelters {
+  padding-left: 20px;
+  padding-right: 20px;
+  border: 2px solid #72b292;
+  border-radius: 20px;
+  background-color: #e1fff0;
+}
+.H_adopter,
+.H_Shelter {
+  font-family: "Poppins";
+  font-size: 18px;
+  margin-top: 30px;
+  color: #373c41;
+}
+
+.P_adopter,
+.P_shelter {
+  font-family: "Poppins";
+  font-size: 15px;
+  color: #606060;
+  width: 350px;
+  margin-top: 10px;
+}
+
+.Browse_Section {
+  align-items: center;
+  font-family: Poppins;
+  background-color: #f9fff7;
+  padding: 40px 80px; /* first value is top-bottom, second is left-right */
+  margin-top: 0px;
+}
+.Seemore {
+  justify-content: flex-end;
+  margin-top: 10px;
+  display: flex;
+  margin-right: auto;
+}
+.BrowseMore {
+  font-family: "Poppins";
+  font-size: 16px;
+  color: #2682c8;
+  text-decoration: none;
+}
+.BrowseMore:hover {
+  color: #49a9f3;
+}
+.tagline3 {
+  font-size: 32px;
+  margin-top: 0px;
+  margin: 0px;
+  color: #373c41;
+}
+.description3 {
+  font-family: "Poppins";
+  font-size: 16px;
+  color: #606060;
+  width: 600px;
+  margin-top: 10px;
+  margin-bottom: 0px;
+}
+
+/* Card Styles */
+.cardheader {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding-left: 10px;
+  padding-right: 10px;
+}
+
+.Browse_Cards {
+  margin-top: 40px;
+  gap: 30px;
+  display: flex;
+  justify-content: space-evenly;
+}
+
+.DogCard,
+.CatCard,
+.RabbitCard {
+  background: white;
+  border-radius: 20px;
+  width: 550px;
+  border: 1px solid #dddddd;
+}
+
+.DogCard .petImg,
+.CatCard .petImg,
+.RabbitCard .petImg {
+  width: 100%;
+  height: 250px;
+  border-top-left-radius: 20px;
+  border-top-right-radius: 20px;
+  object-fit: cover;
+}
+
+.DogCard .Name {
+  font-size: 18px;
+}
+.CatCard .Name {
+  font-size: 18px;
+}
+.RabbitCard .Name {
+  font-size: 18px;
+}
+.info {
+  margin-top: 0px;
+  font-size: 14px;
+
+  margin-left: 12px;
+  color: #666;
+}
+
+.DogCard .Status {
+  color: #3ece86;
+  font-weight: bold;
+}
+.CatCard .Status {
+  color: #ffa81d;
+  font-weight: bold;
+}
+.RabbitCard .Status {
+  color: #ffa81d;
+  font-weight: bold;
+}
+
+.DogCard .detailsBtn {
+  display: block;
+  text-align: center;
+  background: #f5f5f5;
+  padding: 15px;
+  text-decoration: none;
+  color: #333;
+  border-bottom-left-radius: 20px;
+  border-bottom-right-radius: 20px;
+}
+.CatCard .detailsBtn {
+  display: block;
+  text-align: center;
+  background: #f5f5f5;
+  padding: 15px;
+  text-decoration: none;
+  color: #333;
+  border-bottom-left-radius: 20px;
+  border-bottom-right-radius: 20px;
+}
+.RabbitCard .detailsBtn {
+  display: block;
+  text-align: center;
+  background: #f5f5f5;
+  padding: 15px;
+  text-decoration: none;
+  color: #333;
+  border-bottom-left-radius: 20px;
+  border-bottom-right-radius: 20px;
+}
+
+.DogCard .detailsBtn:hover {
+  background: #e0e0e0;
+}
+
+.CatCard .detailsBtn:hover {
+  background: #e0e0e0;
+}
+
+.RabbitCard .detailsBtn:hover {
+  background: #e0e0e0;
+}
+
+.Footer {
+  margin-top: 40px;
+  padding: 20px;
+  text-align: center;
+  background-color: #f8fff6;
+  border-top: 1px solid #dddddd;
+  font-family: "Poppins";
+  color: #606060;
+}

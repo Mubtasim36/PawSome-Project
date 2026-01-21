@@ -1,0 +1,82 @@
+.PageHead {
+  margin-top: 10px;
+}
+
+.TableBox {
+  background: #ffffff;
+  padding: 20px;
+  margin: 18px auto;
+  border-radius: 10px;
+  border: 1px solid #e5e7eb;
+}
+
+.TableActions {
+  display: flex;
+  gap: 12px;
+  align-items: center;
+  justify-content: flex-start;
+  margin-bottom: 12px;
+}
+
+.TableWrap {
+  overflow-x: auto;
+}
+
+.RequestsTable {
+  width: 100%;
+  border-collapse: collapse;
+}
+
+.RequestsTable th,
+.RequestsTable td {
+  padding: 12px;
+  text-align: left;
+  border-bottom: 1px solid #ddd;
+  vertical-align: top;
+}
+
+.RequestsTable th {
+  background-color: #f5f5f5;
+}
+
+.StatusPill {
+  display: inline-block;
+  padding: 5px 10px;
+  border-radius: 999px;
+  font-size: 12px;
+  font-weight: 600;
+  border: 1px solid #d1d5db;
+}
+
+.PillPending {
+  background: #fff7ed;
+  border-color: #fed7aa;
+}
+
+.PillApproved {
+  background: #eff6ff;
+  border-color: #bfdbfe;
+}
+
+.PillCompleted {
+  background: #f0fdf4;
+  border-color: #bbf7d0;
+}
+
+.PillRejected {
+  background: #fef2f2;
+  border-color: #fecaca;
+}
+
+.Note {
+  color: #6b7280;
+  font-size: 13px;
+  margin-top: 6px;
+}
+
+.Muted {
+  color: #6b7280;
+}
+
+.RequestsList{display:flex;flex-direction:column;gap:10px;}
+.RequestLine{background:#ffffff;border:1px solid #e5e7eb;border-radius:10px;padding:12px 14px;box-shadow:0 3px 6px rgba(0,0,0,0.05);}

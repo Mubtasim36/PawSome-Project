@@ -1,0 +1,71 @@
+.FormBox {
+  background: #ffffff;
+  border: 1px solid #e5e7eb;
+  border-radius: 12px;
+  padding: 18px;
+  margin-top: 18px;
+  max-width: 720px;
+}
+
+.FieldLabel {
+  display: block;
+  margin-top: 12px;
+  font-weight: 600;
+  color: #374151;
+}
+
+.FieldInput {
+  width: 100%;
+  padding: 10px 12px;
+  border-radius: 10px;
+  border: 1px solid #d1d5db;
+  outline: none;
+  margin-top: 6px;
+}
+
+.Row {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 14px;
+}
+
+.Actions {
+  display: flex;
+  gap: 10px;
+  margin-top: 16px;
+}
+
+.PrimaryBtn {
+  background: #2682c8;
+  color: white;
+  border: none;
+  border-radius: 8px;
+  padding: 10px 14px;
+  cursor: pointer;
+  font-weight: 600;
+}
+
+.PrimaryBtn:hover { background: #000000; }
+
+.SecondaryBtn {
+  background: #ffffff;
+  color: #111827;
+  border: 1px solid #d1d5db;
+  border-radius: 8px;
+  padding: 10px 14px;
+  cursor: pointer;
+  font-weight: 600;
+  text-decoration: none;
+  display: inline-flex;
+  align-items: center;
+}
+
+.SecondaryBtn:hover { background: #f3f4f6; }
+
+.FormMessage { margin-top: 10px; font-weight: 600; }
+.Ok { color: green; }
+.Err { color: #b91c1c; }
+
+@media (max-width: 820px) {
+  .Row { grid-template-columns: 1fr; }
+}

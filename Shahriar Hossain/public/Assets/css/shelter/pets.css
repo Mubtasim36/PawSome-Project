@@ -1,0 +1,38 @@
+.card h3 { margin: 0 0 10px 0; color:#373c41; }
+label { display:block; margin-top: 10px; color:#373c41; font-size: 14px; }
+input, select, textarea {
+  width: 100%;
+  padding: 10px;
+  border: 1px solid #dddddd;
+  border-radius: 10px;
+  font-family: Poppins;
+  outline: none;
+}
+.cardTop { display:flex; justify-content:space-between; align-items:center; }
+.petItem {
+  border: 1px solid #e5e5e5;
+  border-radius: 14px;
+  padding: 12px;
+  display:flex;
+  gap: 12px;
+  align-items:flex-start;
+}
+.petThumb {
+  width: 90px; height: 90px; border-radius: 12px;
+  object-fit: cover; border: 1px solid #ddd;
+}
+.petMeta { flex: 1; }
+.petMeta b { color:#373c41; }
+.actionRow { display:flex; gap: 8px; margin-top: 10px; flex-wrap:wrap; }
+.smallBtn {
+  padding: 8px 10px;
+  border-radius: 10px;
+  border: 1px solid #2682c8;
+  background:#fff;
+  color:#2682c8;
+  cursor:pointer;
+  font-family:Poppins;
+}
+.smallBtn.danger { border-color:#c0392b; color:#c0392b; }
+.smallBtn:hover { background:#e6f0fa; }
+.smallBtn.danger:hover { background:#fdecea; }

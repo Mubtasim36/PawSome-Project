@@ -1,0 +1,41 @@
+.headerAdmin {
+  text-align: left;
+  margin-top: 10px;
+}
+
+.CardGrid {
+  display: grid;
+  grid-template-columns: repeat(3, minmax(0, 1fr));
+  gap: 18px;
+  margin-top: 24px;
+}
+
+.ActionCard {
+  background: #ffffff;
+  border: 1px solid #e5e7eb;
+  border-radius: 12px;
+  padding: 18px;
+  text-decoration: none;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.06);
+}
+
+.ActionCard h3 { margin: 0; color: #2682c8; }
+.ActionCard p { margin: 8px 0 0; color: #4b5563; }
+.ActionCard:hover { border-color: #2682c8; }
+
+.RecentBox {
+  margin-top: 26px;
+  background: #ffffff;
+  border: 1px solid #e5e7eb;
+  border-radius: 12px;
+  padding: 16px;
+}
+
+.RecentHeader { display: flex; justify-content: space-between; align-items: center; }
+.SectionTitle { margin: 0; font-size: 18px; }
+.LinkBtn { text-decoration: none; color: #2682c8; font-weight: 600; }
+.Loading { padding: 14px; color: #6b7280; }
+
+@media (max-width: 1100px) {
+  .CardGrid { grid-template-columns: repeat(1, minmax(0, 1fr)); }
+}

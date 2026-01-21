@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>PawSome</title>
+    <meta charset="UTF-8" />
+    <meta name="description" content="PawSome" />
+    <meta name="author" content="Adiba Tanzila" />
+    <meta name="viewport" content="width=device-width,initial-scale=1.0" />
+    <link rel="stylesheet" href="login.css" />
+    <link rel="icon" type="image/x-icon" href="Images/Logo.png" />
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons+Outlined" rel="stylesheet">
+  </head>
+    <body class="Body">
+      <!-- Top Header with Navigation Bar and Registration Links -->
+      <header>
+        <div class="header">
+         <a href="home.html" class="SiteName">
+          <img
+            src="Images/Logo.png"
+            alt="Website Logo"
+            width="100"
+            height="100"
+          />
+          PawSome
+        </a>
+          
+          <div class="nav_bar">
+            <a class="Home" href="home.html">Home</a>
+            <a class="About" href="home.html#features">About</a>
+            <!--to scroll to features section-->
+            <a class="Signup" href="signup.html">Signup</a>
+          </div>
+        </div>
+      </header>
+
+      <div class="LoginSection">
+        <div class="img">
+            <img class="loginImg" src="Images/signin.png" alt="Login Image" />
+        </div>
+
+        <div class="loginText">
+      
+      <h1 class="signHeader2">Welcome Back!</h1>
+      <p class="signSubHeader2">
+        Login to continue your journey with PawSome.
+      </p>
+
+      <div class="signContainer">
+        <form id="LoginForm" class="loginform">  
+
+        <div >
+          <p class="mail_text">E-mail</p>
+          <div class="inputField">
+            <span class="material-icons-outlined">mail</span>             <!to provide a means of applying styles or manipulating specific sections of text within a document   !>
+          <input  class="mailInput" type="text" id="email" placeholder="E-mail">
+          </div>
+        </div>
+          <div>
+          <p class="pass_text">Password</p>
+          <div class="inputField">
+            <span class="material-icons-outlined" id="lock">lock</span>
+          <input class="passwordInput" type="password" id="password" placeholder="Password" />
+          <span class="material-icons-outlined visibilityToggle" id="togglePassword">
+      visibility_off
+    </span>
+          </div>
+          </div>
+          <button type="button" id="LoginBtn" class="LoginBTN">Login</button>
+          <p class="forgotPass">Forgot your password? <a class="forgotLink" href="forgot_password.html">Reset Password</a></p>
+
+        
+           <div class="signupPrompt">
+          <p class="signUpText">
+            Don't have an account?
+            <a class="signUpLink" href="signup.html">Sign Up</a>
+          </p>
+          </div>
+        </form>
+      </div>
+        </div>
+        </div>
+    <footer class="Footer">
+      <p class="footer-text">&copy; 2025 PawSome. All rights reserved.</p>   <!  &copy; is for copyright symbol-->
+    </footer>
+        <script src="login.js" ></script>
+
+    </body>
+  </body>
+</html>

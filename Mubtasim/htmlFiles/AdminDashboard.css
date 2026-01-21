@@ -1,0 +1,413 @@
+html,
+body {
+  /* Ensures full height for body and html */
+  margin: 0;
+  padding: 0;
+  background-color: #fefffe;
+  font-family: "Poppins", sans-serif;
+  scroll-behavior: smooth; /* for smooth scrolling on clicking about button */
+}
+.header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 10px 20px;
+  background-color: #f8fff6;
+  margin: 0px;
+  padding: 0px;
+  border-bottom: 1px solid #dddddd;
+  position: relative; /*to overlap the sidebar*/
+  z-index: 200;
+  width: 100%;
+}
+.SiteName {
+  display: flex;
+  align-items: center;
+  font-family: "Poppins";
+  font-size: 48px;
+  color: #2682c8;
+  margin: 0px;
+  padding: 0px;
+  font-weight: bold;
+  text-decoration: none;
+}
+.Home,
+.Logout {
+  font-family: Poppins;
+  font-size: 16px;
+  padding: 10px;
+  text-decoration: none;
+  color: rgb(52, 49, 49);
+}
+
+.nav_bar {
+  display: flex;
+  margin-right: 80px;
+  align-items: center;
+}
+
+.Logout {
+  background-color: #2682c8;
+  color: white;
+  border-radius: 6px;
+  padding-left: 14px;
+  padding-right: 14px;
+  margin: 10px;
+}
+
+.Home:hover {
+  color: #50575d;
+}
+
+.Logout:hover {
+  background-color: #000000;
+  color: rgb(203, 214, 233);
+}
+
+.UserCount,
+.PetsCount,
+.AdoptionCount {
+  background-color: #ffffff;
+  border-radius: 10px;
+  padding: 20px;
+  margin: 20px auto;
+  width: 25%;
+  display: inline-block;
+  text-align: center;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+.UserCount h2,
+.PetsCount h2,
+.AdoptionCount h2 {
+  font-size: 36px;
+  color: #2682c8;
+}
+
+.headerAdmin {
+  text-align: center;
+  margin-top: 20px;
+}
+
+.CountCard {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  margin-top: 30px;
+}
+
+/* Users Design */
+.ManageUsers {
+  background-color: #ffffff;
+  padding: 20px;
+  margin: 30px auto;
+  width: 90%;
+  border-radius: 10px;
+}
+
+.ManageUsersHeader {
+  margin-bottom: 5px;
+}
+
+/* Table */
+.ManageUsersTable {
+  width: 100%;
+  border-collapse: collapse;
+}
+
+.ManageUsersTable th,
+.ManageUsersTable td {
+  padding: 12px;
+  text-align: left;
+  border-bottom: 1px solid #ddd;
+}
+
+.ManageUsersTable th {
+  background-color: #f5f5f5;
+}
+
+/* Status Labels */
+.StatusActive {
+  color: green;
+  font-weight: bold;
+}
+
+.StatusDisabled {
+  color: red;
+  font-weight: bold;
+}
+
+/* Action Buttons */
+.ActionButtons button {
+  margin-right: 5px;
+  padding: 6px 10px;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+.ViewBtn {
+  background-color: #ff45ab;
+  color: white;
+}
+.ViewBtn:hover {
+  background-color: #ff6dbd;
+  color: white;
+}
+
+.EditBtn {
+  background-color: #2196f3;
+  color: white;
+}
+.EditBtn:hover {
+  background-color: #53b2ff;
+  color: white;
+}
+
+.DisableBtn {
+  background-color: #ff3300;
+  color: white;
+}
+.DisableBtn:hover {
+  background-color: #ff5d35;
+  color: white;
+}
+
+.EnableBtn {
+  background-color: #4caf50;
+  color: white;
+}
+.EnableBtn:hover {
+  background-color: #7aea7d;
+  color: white;
+}
+
+/* Pets table Design */
+
+.ManagePets {
+  background-color: #ffffff;
+  padding: 20px;
+  margin: 30px auto;
+  width: 90%;
+  border-radius: 10px;
+}
+
+.ManagePetsHeader {
+  margin-bottom: 5px;
+}
+
+.ManagePetsTable {
+  width: 100%;
+  border-collapse: collapse;
+}
+
+.ManagePetsTable th,
+.ManagePetsTable td {
+  padding: 12px;
+  text-align: left;
+  border-bottom: 1px solid #ddd;
+}
+
+.ManagePetsTable th {
+  background-color: #f5f5f5;
+}
+
+.ManagePetsTable tr:hover {
+  background-color: #f0f0f0;
+}
+
+/*PET-SPECIFIC STATUS*/
+
+.HealthVaccinated {
+  color: #4caf50;
+  font-weight: bold;
+}
+
+.HealthTreatment {
+  color: #ff9800;
+  font-weight: bold;
+}
+
+.HealthNotVaccinated {
+  color: #f44336;
+  font-weight: bold;
+}
+/* ===============================
+   Manage Adoptions Section
+   =============================== */
+.ManageAdoptions {
+  background-color: #ffffff;
+  padding: 20px;
+  margin: 30px auto;
+  width: 90%;
+  border-radius: 10px;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.05);
+}
+
+.ManageAdoptionsHeader {
+  font-size: 28px;
+  margin-bottom: 5px;
+  color: #2682c8;
+}
+
+.ManageAdoptions p {
+  font-size: 14px;
+  margin-bottom: 15px;
+  color: #555;
+}
+
+/* Table Styling */
+.ManageAdoptionsTable {
+  width: 100%;
+  border-collapse: collapse;
+  font-size: 14px;
+}
+
+.ManageAdoptionsTable th,
+.ManageAdoptionsTable td {
+  padding: 12px;
+  text-align: left;
+  border-bottom: 1px solid #ddd;
+}
+
+.ManageAdoptionsTable th {
+  background-color: #f5f5f5;
+  font-weight: 600;
+  color: #333;
+}
+
+/* Status Styles */
+.StatusPending {
+  color: #ff9800;
+  font-weight: bold;
+}
+
+.StatusApproved {
+  color: #2196f3;
+  font-weight: bold;
+}
+
+.StatusCompleted {
+  color: #4caf50;
+  font-weight: bold;
+}
+
+.StatusRejected {
+  color: #f44336;
+  font-weight: bold;
+}
+
+/* Action Buttons */
+.ActionButtons button {
+  margin-right: 5px;
+  padding: 6px 12px;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  font-size: 13px;
+}
+
+.ApproveBtn {
+  background-color: #4caf50;
+  color: white;
+}
+
+.RejectBtn {
+  background-color: #f44336;
+  color: white;
+}
+
+.ViewBtn {
+  background-color: #ff45ab;
+  color: white;
+}
+
+/* Hover Effects */
+.ManageAdoptionsTable tr:hover {
+  background-color: #f0f8ff;
+}
+
+.AdminActivity {
+  background-color: #ffffff;
+  padding: 20px;
+  margin: 30px auto;
+  width: 90%;
+  border-radius: 10px;
+}
+
+.AdminActivityHeader {
+  margin-bottom: 5px;
+}
+
+.AdminActivityTable {
+  width: 100%;
+  border-collapse: collapse;
+  margin-top: 10px;
+}
+
+.AdminActivityTable th,
+.AdminActivityTable td {
+  padding: 12px;
+  text-align: left;
+  border-bottom: 1px solid #ddd;
+}
+
+.AdminActivityTable th {
+  background-color: #f5f5f5;
+}
+
+.AdminActivityTable tr:hover {
+  background-color: #f0f0f0;
+}
+
+/* Sidebar fixed with header */
+.SideBar {
+  position: fixed;
+  top: 0; /* start at very top */
+  left: 0;
+  height: 100vh; /* full viewport height */
+  width: 220px;
+  background-color: #eff4fa;
+  border-right: 1px solid #ddd;
+  display: flex;
+  flex-direction: column;
+  font-family: "Poppins", sans-serif;
+  z-index: 100;
+  padding-top: 120px; /* space for header content */
+  box-sizing: border-box;
+}
+
+.MainContent,
+.CountCard,
+.ManageUsers,
+.ManagePets,
+.ManageAdoptions,
+.AdminActivity {
+  /*to keep all except header to bit right of sidebar*/
+  margin-left: 250px; /* slightly wider than sidebar */
+  padding: 20px 30px 20px 20px;
+  box-sizing: border-box;
+}
+
+/* Sidebar links */
+.SideBar a {
+  padding: 12px 20px;
+  text-decoration: none;
+  font-size: 16px;
+  font-weight: 500;
+  color: #000000;
+  margin-bottom: 5px;
+  border-radius: 8px;
+  transition: all 0.3s ease; /*to animate hover effect*/
+}
+
+/* Hover effect */
+.SideBar a:hover {
+  background-color: #2682c8;
+  color: white;
+}
+
+.SideBar .Overview {
+  background-color: #2682c8;
+  color: rgb(255, 255, 255);
+}

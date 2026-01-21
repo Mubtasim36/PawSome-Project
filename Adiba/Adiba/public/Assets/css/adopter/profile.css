@@ -1,0 +1,169 @@
+/* public/Assets/css/adopter/profile.css */
+
+.ProfileLayout {
+  display: flex;
+  gap: 30px;
+  align-items: flex-start;
+  background: #ffffff;
+  border-radius: 14px;
+  padding: 26px;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.06);
+  max-width: 1100px;
+}
+
+/* LEFT */
+.ProfileLeft {
+  width: 320px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.profile_pic {
+  border-radius: 14px;
+  object-fit: cover;
+  border: 1px solid #e6e6e6;
+  background: #f5f7fb;
+}
+
+.uploadProfileForm {
+  width: 100%;
+  text-align: center;
+  margin-top: 14px;
+}
+
+.addProfilebtn {
+  width: 100%;
+  background-color: #2682c8;
+  color: #fff;
+  border: none;
+  border-radius: 10px;
+  padding: 12px 14px;
+  cursor: pointer;
+  font-weight: 600;
+  transition: 0.2s ease;
+}
+
+.addProfilebtn:hover {
+  background-color: #000000;
+  color: rgb(203, 214, 233);
+}
+
+.note {
+  font-size: 13px;
+  color: #666;
+  margin-top: 10px;
+  line-height: 1.35;
+}
+
+/* RIGHT */
+.ProfileContainer {
+  flex: 1;
+}
+
+.info {
+  margin: 0 0 14px 0;
+  font-size: 22px;
+  font-weight: 700;
+}
+
+.ProfileDetails {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 14px 20px;
+  padding: 18px;
+  border-radius: 12px;
+  background: #fbfbfb;
+  border: 1px solid #ededed;
+}
+
+.ProfileDetails div {
+  font-size: 15px;
+  color: #222;
+}
+
+.ProfileDetails strong {
+  color: #000;
+}
+
+/* ACTIONS */
+.userActions {
+  display: flex;
+  gap: 12px;
+  flex-wrap: wrap;
+  margin-top: 18px;
+  align-items: center;
+}
+
+.EditBtn,
+.ViewBtn,
+.DelBtn {
+  display: inline-block;
+  text-decoration: none;
+  border: none;
+  border-radius: 10px;
+  padding: 12px 16px;
+  font-weight: 700;
+  cursor: pointer;
+}
+
+.EditBtn {
+  background-color: #2196f3;
+  color: white;
+}
+.EditBtn:hover {
+  background-color: #53b2ff;
+}
+
+.ViewBtn {
+  background-color: #ff45ab;
+  color: white;
+}
+.ViewBtn:hover {
+  background-color: #ff6dbd;
+}
+
+.DelBtn {
+  background-color: #ff3300;
+  color: white;
+}
+.DelBtn:hover {
+  background-color: #ff5d35;
+}
+
+.FormMessage {
+  width: 100%;
+  margin-top: 10px;
+  font-weight: 600;
+}
+
+.formError {
+  margin-top: 10px;
+  color: #b00020;
+  background: #ffe6ea;
+  padding: 10px 12px;
+  border-radius: 10px;
+  border: 1px solid #ffb3c1;
+}
+
+.formSuccess {
+  margin-top: 10px;
+  color: #0b6b2f;
+  background: #e7fff0;
+  padding: 10px 12px;
+  border-radius: 10px;
+  border: 1px solid #b6f3cf;
+}
+
+/* Responsive */
+@media (max-width: 900px) {
+  .ProfileLayout {
+    flex-direction: column;
+  }
+  .ProfileLeft {
+    width: 100%;
+  }
+  .ProfileDetails {
+    grid-template-columns: 1fr;
+  }
+}

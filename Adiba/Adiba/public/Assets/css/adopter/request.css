@@ -1,0 +1,18 @@
+.MainContent{padding:20px 30px 20px 20px;box-sizing:border-box;}
+.BackLink{display:inline-block;margin-bottom:14px;text-decoration:none;color:#2682c8;font-weight:600;}
+.BackLink:hover{text-decoration:underline;}
+.PageTitle{margin:0 0 6px 0;font-size:28px;color:#2682c8;}
+.PageSub{margin:0 0 16px 0;color:#444;}
+.Card{background:#fff;border-radius:10px;padding:20px;box-shadow:0 4px 6px rgba(0,0,0,0.08);max-width:680px;}
+.Form{display:flex;flex-direction:column;gap:10px;}
+.Label{font-weight:600;color:#222;}
+.Req{color:#ff3300;}
+.Input,.TextArea{border:1px solid #ddd;border-radius:8px;padding:10px;font-family:'Poppins',sans-serif;font-size:14px;}
+.TextArea{resize:vertical;}
+.BtnRow{display:flex;gap:10px;align-items:center;margin-top:8px;flex-wrap:wrap;}
+.PrimaryBtn,.SecondaryBtn{display:inline-block;border:none;border-radius:6px;padding:10px 14px;text-decoration:none;font-family:Poppins;font-size:14px;cursor:pointer;}
+.PrimaryBtn{background-color:#2682c8;color:#fff;}
+.PrimaryBtn:hover{background-color:#000;color:#cbd6e9;}
+.SecondaryBtn{background:#f5f5f5;color:#222;}
+.SecondaryBtn:hover{background:#e9e9e9;}
+.ErrorBox{background:#ffe9e9;border:1px solid #ffb6b6;padding:10px;border-radius:8px;margin-bottom:10px;color:#b40000;font-weight:600;}

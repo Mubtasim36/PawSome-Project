@@ -1,0 +1,83 @@
+.BackLink {
+  display: inline-block;
+  margin: 10px 0 18px 0;
+  text-decoration: none;
+  color: #2682c8;
+  font-weight: 600;
+}
+
+.PetDetails {
+  background: #ffffff;
+  border: 1px solid #e5e7eb;
+  border-radius: 12px;
+  padding: 18px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.06);
+}
+
+.PetGrid {
+  display: grid;
+  grid-template-columns: 1.4fr 0.6fr;
+  gap: 18px;
+}
+
+.PetTitle {
+  margin: 0 0 8px 0;
+  font-size: 28px;
+  color: #111827;
+}
+
+.PetMeta {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 10px;
+  margin: 10px 0 16px 0;
+}
+
+.Badge {
+  display: inline-block;
+  padding: 6px 10px;
+  border-radius: 999px;
+  background: #f0f8ff;
+  color: #2682c8;
+  font-weight: 600;
+  font-size: 12px;
+}
+
+.ReqBox {
+  border: 1px solid #e5e7eb;
+  border-radius: 12px;
+  padding: 14px;
+  background: #f8fff6;
+}
+
+.ReqBox textarea {
+  width: 100%;
+  min-height: 90px;
+  resize: vertical;
+  padding: 10px;
+  border: 1px solid #d1d5db;
+  border-radius: 10px;
+  outline: none;
+}
+
+.PrimaryBtn {
+  width: 100%;
+  margin-top: 10px;
+  border: none;
+  cursor: pointer;
+  background: #2682c8;
+  color: #ffffff;
+  border-radius: 10px;
+  padding: 10px 12px;
+  font-weight: 600;
+}
+
+.PrimaryBtn:hover { background: #000000; color: rgb(203, 214, 233); }
+
+.FormMessage { margin-top: 10px; font-weight: 600; }
+.Ok { color: #0f7a29; }
+.Err { color: #b42318; }
+
+@media (max-width: 980px) {
+  .PetGrid { grid-template-columns: 1fr; }
+}

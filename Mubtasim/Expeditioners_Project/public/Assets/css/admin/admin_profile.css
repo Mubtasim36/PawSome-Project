@@ -1,0 +1,261 @@
+html,
+body {
+  /* Ensures full height for body and html */
+  margin: 0;
+  padding: 0;
+  background-color: #fefffe;
+  font-family: "Poppins", sans-serif;
+  scroll-behavior: smooth; /* for smooth scrolling on clicking about button */
+}
+.header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 10px 20px;
+  background-color: #f8fff6;
+  margin: 0px;
+  padding: 0px;
+  border-bottom: 1px solid #dddddd;
+  position: relative; /*to overlap the sidebar*/
+  z-index: 200;
+  width: 100%;
+}
+.SiteName {
+  display: flex;
+  align-items: center;
+  font-family: "Poppins";
+  font-size: 48px;
+  color: #2682c8;
+  margin: 0px;
+  padding: 0px;
+  font-weight: bold;
+  text-decoration: none;
+}
+.Home,
+.Logout {
+  font-family: Poppins;
+  font-size: 16px;
+  padding: 10px;
+  text-decoration: none;
+  color: rgb(52, 49, 49);
+}
+
+.nav_bar {
+  display: flex;
+  margin-right: 80px;
+  align-items: center;
+}
+
+.Logout {
+  background-color: #2682c8;
+  color: white;
+  border-radius: 6px;
+  padding-left: 14px;
+  padding-right: 14px;
+  margin: 10px;
+}
+
+.Home:hover {
+  color: #50575d;
+}
+
+.Logout:hover {
+  background-color: #000000;
+  color: rgb(203, 214, 233);
+}
+
+.headerAdmin {
+  text-align: center;
+  justify-content: center;
+  margin-top: 20px;
+}
+
+/* Sidebar fixed with header */
+.SideBar {
+  position: fixed;
+  top: 0; /* start at very top */
+  left: 0;
+  height: 100vh; /* full viewport height */
+  width: 220px;
+  background-color: #eff4fa;
+  border-right: 1px solid #ddd;
+  display: flex;
+  flex-direction: column;
+  font-family: "Poppins", sans-serif;
+  z-index: 100;
+  padding-top: 120px; /* space for header content */
+  box-sizing: border-box;
+}
+
+.MainContent {
+  /*to keep all except header to bit right of sidebar*/
+  margin-left: 250px; /* slightly wider than sidebar */
+  padding: 20px 30px 20px 20px;
+  box-sizing: border-box;
+}
+
+/* Sidebar links */
+.SideBar a {
+  padding: 12px 20px;
+  text-decoration: none;
+  font-size: 16px;
+  font-weight: 500;
+  color: #000000;
+  margin-bottom: 5px;
+  border-radius: 8px;
+  transition: all 0.3s ease; /*to animate hover effect*/
+}
+
+/* Hover effect */
+.SideBar a:hover {
+  background-color: #2682c8;
+  color: white;
+}
+
+.SideBar .Profile {
+  background-color: #2682c8;
+  color: rgb(255, 255, 255);
+}
+
+.info {
+  color: #1c8548;
+  text-align: center;
+  margin-bottom: 20px;
+}
+
+.ProfileContainer {
+  background-color: #ffffff;
+  padding: 20px;
+  border-radius: 8px;
+  justify-content: center;
+
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+  max-width: 600px; /* Limit width for better readability */
+}
+
+.ProfileDetails div {
+  margin-bottom: 15px;
+  font-size: 18px;
+  padding: 16px;
+  border: 1px solid #e1e3e8;
+  border-radius: 14px;
+}
+.ProfileDetails strong {
+  color: #2682c8;
+}
+
+.editProfileButton {
+  text-align: center;
+  margin-top: 20px;
+  background-color: #17b0a3;
+  color: white;
+  border: none;
+  padding: 12px 24px;
+  font-size: 16px;
+  border-radius: 8px;
+  cursor: pointer;
+}
+.editProfileButton:hover {
+  background-color: #22cdbe;
+}
+.MainContent {
+  margin-bottom: 20px;
+}
+
+.profile-picture {
+  text-align: center;
+  margin-bottom: 20px;
+}
+.profile_pic {
+  border-radius: 50%;
+  border: 1px solid #e1e3e8;
+  padding: 0px;
+}
+.ProfilePicture {
+  text-align: center;
+  margin-top: 20px;
+  margin-bottom: 20px;
+}
+.uploadProfileForm {
+  text-align: center;
+}
+.addProfilebtn {
+  background: #2c92e0;
+  color: white;
+  padding: 10px 16px;
+  border-radius: 8px;
+  cursor: pointer;
+  margin-left: 50px;
+  border: none;
+}
+.addProfilebtn:hover {
+  background-color: #3a84ce;
+}
+
+.note {
+  margin-left: -20px;
+  font-size: 14px;
+}
+
+/* Profile main layout */
+.ProfileLayout {
+  display: flex;
+  gap: 40px;
+  align-items: flex-start;
+  margin-top: 40px;
+}
+
+.ProfileLeft {
+  width: 300px;
+  text-align: center;
+}
+
+/* Fix button alignment */
+.uploadProfileForm {
+  margin-top: 20px;
+}
+
+.addProfilebtn {
+  margin-left: 0;
+}
+
+.ProfileContainer {
+  flex: 10;
+}
+
+.DelBtn {
+  background: #d80229;
+  color: #fff;
+  border: none;
+  padding: 12px 18px;
+  border-radius: 8px;
+  cursor: pointer;
+}
+.DelBtn:hover {
+  background: #8b0019;
+}
+.formError {
+  color: #b00020;
+  font-size: 14px;
+}
+
+.MakeBtn {
+  text-align: center;
+  margin-top: 20px;
+  background: #f9d400;
+  color: #000000;
+  border: none;
+  padding: 12px 24px;
+  font-size: 16px;
+  border-radius: 8px;
+  cursor: pointer;
+}
+
+.MakeBtn:hover {
+  background: #c7a500;
+}
+
+.userActions {
+  text-align: center;
+  margin-top: 20px;
+}
